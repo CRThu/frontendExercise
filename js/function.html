@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <meta charset="utf-8">
+        <script>
+            function welcome(name,job)
+            {
+                alert("Welcome " + name + ", the " + job);
+            }
+        </script>
+        <button onclick="welcome('Harry Potter','Wizard')">点击这里</button>
+        <button onclick="welcome('Bob','Builder')">点击这里</button>
+        <br>
+        <p>本例调用的函数会执行一个计算，然后返回结果：</p>
+        <p id="demo"></p>
+        <script>
+        function multiply(a,b){
+            return a*b;
+        }
+        document.getElementById("demo").innerHTML=multiply(4,3);
+        </script>
+        <hr>
+        <p id="call"></p>
+        <script>
+            var myCallObject;
+            function callfunc(a, b)
+            {
+                return a * b;
+            }
+            myCallObject = callfunc.call(myCallObject, 10, 2);    // 返回 20
+            document.getElementById("call").innerHTML = myCallObject; 
+        </script>
+        
+<p id="apply"></p>
+
+<script>
+var myApplyObject, myArray;
+function myFunction(a, b)
+{
+    return a * b;
+}
+myArray = [10, 2]
+myApplyObject = myFunction.apply(myApplyObject, myArray);      // 返回 20
+document.getElementById("apply").innerHTML = myApplyObject; 
+</script>
+
+    </body>
+</html>

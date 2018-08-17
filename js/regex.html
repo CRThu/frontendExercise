@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <meta charset="utf-8">
+        <script>
+            // 搜索字符串
+            var str = "Visit Runoob!"; 
+            var n = str.search(/Runoob/i);
+            document.write(n+"<br>");
+            // 正则字符串替换
+            var str = "Hello Microsoft."; 
+            var txt = str.replace(/microsoft/i,"Runoob");
+            document.write(txt+"<br>");
+            // 是否含有e,若有返回true
+            document.write(/e/.test("The best things in life are free!")+"<br>");
+            // 匹配e,若有返回匹配结果
+            document.write(/e/.exec("The best things in life are free!")+"<br>");
+        </script>
+    </body>
+</html>

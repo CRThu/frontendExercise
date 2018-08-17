@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <meta charset="utf-8">
+        <a href="javascript:void(0)">单击此处什么也不会发生</a>
+        <br>
+        <a href="javascript:void(alert('Warning!!!'))">点我!</a>
+        <br>
+        <script>
+            function getValue()
+            {
+                var a,b,c;
+                a = void ( b = 5, c = 7 );
+                document.write('a = ' + a + ' b = ' + b +' c = ' + c );
+            }
+        </script>
+        <p>点击以下按钮查看结果：</p>
+        <form>
+            <input type="button" value="点我" onclick="getValue();" />
+        </form>
+        <br>
+        <a href="javascript:void(0);">点我没有反应的!</a>
+        <a href="#pos">点我定位到指定位置!</a>
+        <p id="br"></p>
+        <script>
+            for(var i=0;i<50;i++)
+                document.getElementById("br").innerHTML+="<br>";
+                //document.write("<br>");
+        </script>
+        <p id="pos">尾部定位点</p>
+    </body>
+</html>

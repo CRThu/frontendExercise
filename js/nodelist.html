@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <meta charset="utf-8">
+
+        <h2>JavaScript HTML DOM!</h2>
+        <p>Hello World!</p>
+        <p>Hello Runoob!</p>
+        <p id="demo"></p>
+
+        <script>
+            var myNodelist = document.querySelectorAll("p");
+            document.getElementById("demo").innerHTML = "第二个段落的内容为:<span style='color:red;'> " + myNodelist[1].innerHTML + '</span>';
+            document.getElementById("demo").innerHTML +="<br>" + "文档包含 " + myNodelist.length + " 个段落。";
+        </script>
+
+        <button onclick="myFunction()">点我</button>
+
+        <script>
+        function myFunction()
+        {
+            var myNodelist = document.querySelectorAll("p");
+            var i;
+            for (i = 0; i < myNodelist.length; i++)
+            {
+                myNodelist[i].style.color = "red";
+            }
+        }
+        </script>
+    </body>
+</html>

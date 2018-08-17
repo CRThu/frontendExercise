@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <!--appendChild-->
+        <meta charset="utf-8">
+        <div id="div11">
+            <p id="p11">这是一个段落。</p>
+            <p id="p12">这是另外一个段落。</p>
+        </div>
+        <script>
+            var para = document.createElement("p1");
+            var node = document.createTextNode("这是一个新的段落。");
+            para.appendChild(node);
+            
+            var element = document.getElementById("div11");
+            element.appendChild(para);
+        </script>
+        <hr>
+
+        <div id="div21">
+            <p id="p21">这是一个段落。</p>
+            <p id="p22">这是另外一个段落。</p>
+        </div>
+                 
+        <script>
+            var para = document.createElement("p2");
+            var node = document.createTextNode("这是一个新的段落。");
+            para.appendChild(node);
+                 
+            var element = document.getElementById("div21");
+            var child = document.getElementById("p21");
+            element.insertBefore(para, child);
+        </script>
+        <hr>
+
+        <div id="div31">
+            <p id="p31">这是一个段落。</p>
+            <p id="p32">这是另外一个段落。</p>
+        </div>
+                 
+        <script>
+            var parent = document.getElementById("div31");
+            var child = document.getElementById("p31");
+            parent.removeChild(child);
+        </script>
+        <hr>
+
+        <div id="div41">
+            <p id="p41">这是一个段落。</p>
+            <p id="p42">这是另外一个段落。</p>
+        </div>
+                 
+        <script>
+            var para = document.createElement("p4");
+            var node = document.createTextNode("这是一个新的段落。");
+            para.appendChild(node);
+                 
+            var parent = document.getElementById("div41");
+            var child = document.getElementById("p41");
+            parent.replaceChild(para, child);
+        </script>
+    </body>
+</html>

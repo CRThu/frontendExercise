@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <body onload="startTime()">
+        <meta charset="utf-8">
+        <script>
+            var date=new Date();
+            var y=new Date().getFullYear();     // 获取年份
+            var t=new Date().getTime();         // 从 1970 年 1 月 1 日至今的毫秒数
+            var utc=new Date().toUTCString();   // 将当日的日期（根据 UTC）转换为字符串
+            document.write(date+"<br>");
+            document.write(y+"<br>");
+            document.write(utc+"<br>");
+
+            var d = new Date();
+            var weekday=new Array(7);
+            weekday[0]="周日";
+            weekday[1]="周一";
+            weekday[2]="周二";
+            weekday[3]="周三";
+            weekday[4]="周四";
+            weekday[5]="周五";
+            weekday[6]="周六";
+            document.write(weekday[d.getDay()]+"<hr>");
+
+            date.setFullYear(2020,10,3);
+            document.write(date+"<br>");
+
+            var today = new Date();
+            var d1 = new Date("October 13, 1975 11:13:00");
+            var d2 = new Date(79,5,24);
+            var d3 = new Date(79,5,24,11,33,0);
+            document.write(today+"<br>");
+            document.write(d1+"<br>");
+            document.write(d2+"<br>");
+            document.write(d3+"<br>");
+
+            today.setDate(today.getDate()+5);
+            document.write(today+"<br>");
+
+            var x=new Date();
+            x.setFullYear(2100,0,14);
+            var today = new Date();
+
+            if (x>today)
+            {
+                alert("今天是2100年1月14日之前");
+            }
+            else
+            {
+                alert("今天是2100年1月14日之后");
+            }
+        </script>
+
+        <div id="nowtime"></div>
+        <script>
+        function startTime()
+        {
+            var today=new Date();
+            var h=today.getHours();
+            var m=today.getMinutes();
+            var s=today.getSeconds();// 在小于10的数字前加一个‘0’
+            m=checkTime(m);
+            s=checkTime(s);
+            document.getElementById('nowtime').innerHTML=h+":"+m+":"+s;
+            t=setTimeout(function(){startTime()},500);
+        }
+        function checkTime(i)
+        {
+            if (i<10)
+            {
+                i="0" + i;
+            }
+            return i;
+        }
+        </script>
+
+    </body>
+</html>

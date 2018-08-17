@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <meta charset="utf-8">
+        <script src="https://cdn.bootcss.com/vue/2.4.2/vue.min.js"></script>
+
+        <!--事件监听-->
+        <div id="appcounter">
+            <button v-on:click="counter += 1">增加 1</button>
+            <p>这个按钮被点击了 {{ counter }} 次。</p>
+        </div>
+              
+        <script>
+            new Vue
+            ({
+                el: '#appcounter',
+                data:
+                {
+                    counter: 0
+                }
+            })
+        </script>
+        <hr>
+
+        <!--接收一个定义的方法来调用-->
+        <div id="appgreet">
+            <!-- `greet` 是在下面定义的方法名 -->
+            <button v-on:click="greet">Greet</button>
+        </div>
+             
+        <script>
+            var app = new Vue
+            ({
+                el: '#appgreet',
+                data: 
+                {
+                    name: 'Vue.js'
+                },
+               // 在 `methods` 对象中定义方法
+               methods:
+               {
+                    greet: function (event)
+                    {
+                        // `this` 在方法里指当前 Vue 实例
+                        alert('Hello ' + this.name + '!')
+                        // `event` 是原生 DOM 事件
+                        if (event)
+                        {
+                            alert(event.target.tagName)
+                        }
+                    }
+               }
+             })
+             // 也可以用 JavaScript 直接调用方法
+             app.greet() // -> 'Hello Vue.js!'
+        </script>
+        <hr>
+
+        <!--用内联 JavaScript 语句-->
+        <div id="appinline">
+            <button v-on:click="say('hi')">Say hi</button>
+            <button v-on:click="say('what')">Say what</button>
+          </div>
+          
+        <script>
+            new Vue
+            ({
+                el: '#appinline',
+                methods:
+                {
+                    say: function (message)
+                    {
+                        alert(message)
+                    }
+                }
+            })
+        </script>
+        <hr>
+
+        <!--按键修饰符-->
+        <div id="appbutton">
+            <button v-on:click.shift="shift()">click+shift</button>
+            <button v-on:click.alt.47="altc()">click+alt+c</button>
+          </div>
+          
+        <script>
+            new Vue
+            ({
+                el: '#appbutton',
+                methods:
+                {
+                    shift: function ()
+                    {
+                        alert("click+shift");
+                    },
+                    altc: function ()
+                    {
+                        alert("click+alt+c");
+                    }
+                }
+            })
+        </script>
+        <hr>
+
+        <!--点击按钮的不同操作-->
+        <div id="app">
+            <input type="button"
+                value="单击后增加"
+                @click="m +=1">
+            <input type="button"
+                value="绑定函数的按钮"
+                @click="add">
+            <input type="button"
+                value="绑定可传值函数的按钮"
+                @click="add2(3,4)">
+            <div>这个按钮被点击了 {{ m }} 。</div>
+        </div>
+            
+        <script>
+            new Vue
+            ({
+                el: '#app',
+                data:
+                {
+                    m:0
+                },
+                methods:
+                {
+                    add:function(e)
+                    {
+                        e.stopPropagation();
+                        this.m +=2;
+                    },
+            
+                    add2:function(m,n)
+                    {
+                        this.m=m+n;
+                    }
+                }
+            })
+        </script>
+    </body>
+</html>

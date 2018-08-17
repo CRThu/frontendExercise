@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <meta charset="utf-8">
+        <!--创建画布-->
+        <canvas id="myCanvas" width="200" height="100"
+            style="border:1px solid #000000;">
+        </canvas>
+        <script>
+            // 创建线
+            var c=document.getElementById("myCanvas");
+            var ctx=c.getContext("2d");
+            ctx.moveTo(0,0);        // 线条开始
+            ctx.lineTo(200,100);    // 线条结束
+            ctx.stroke();
+        </script>
+    </body>
+</html>

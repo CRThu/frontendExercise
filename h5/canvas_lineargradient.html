@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <meta charset="utf-8">
+        <!--创建画布-->
+        <canvas id="myCanvas" width="200" height="100"
+            style="border:1px solid #000000;">
+        </canvas>
+        <script>
+            // 创建线条渐变矩形
+            var c=document.getElementById("myCanvas");
+            var ctx=c.getContext("2d");
+            // 创建渐变
+            var grd=ctx.createLinearGradient(0,0,200,0);
+            grd.addColorStop(0,"red");
+            grd.addColorStop(1,"white");
+            // 填充渐变
+            ctx.fillStyle=grd;
+            ctx.fillRect(10,10,150,80);
+        </script>
+    </body>
+</html>

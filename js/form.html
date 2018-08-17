@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <meta charset="utf-8">
+        <form name="myNameForm" action="" onsubmit="validateNameForm()" method="post">
+            名字: 
+            <input type="text" name="fname">
+            <input type="submit" value="提交">
+        </form>
+        <script>
+            function validateNameForm()
+            {
+                var x = document.forms["myNameForm"]["fname"].value;
+                if (x == null || x == "")
+                {
+                    alert("需要输入名字。");
+                    return false;
+                }
+            }
+        </script>
+        <br>
+
+        <p>请输入 1 到 10 之间的数字：</p>
+        <input id="numb">
+        <button type="button" onclick="myFunction()">提交</button>
+        <p id="out"></p>
+        <script>
+            function myFunction()
+            {
+                var x, text;
+                // 获取 id="numb" 的值
+                x = document.getElementById("numb").value;
+                // 如果输入的值 x 不是数字或者小于 1 或者大于 10，则提示错误 Not a Number or less than one or greater than 10
+                if (isNaN(x) || x < 1 || x > 10)
+                {
+                    text = "输入错误";
+                }
+                else
+                {
+                    text = "输入正确";
+                }
+                document.getElementById("out").innerHTML = text;
+            }
+        </script>
+        <br>
+
+        <form action="" method="post">
+            <input type="text" name="fname" required="required">
+            <input type="submit" value="提交">
+        </form>
+        <br>
+
+        <form name="myMailForm" action="" onsubmit="validateMailForm()" method="post">
+                Email: 
+                <input type="text" name="email">
+                <input type="submit" value="提交">
+        </form>
+        <script>
+            function validateMailForm()
+            {
+                var x=document.forms["myMailForm"]["email"].value;
+                var atpos=x.indexOf("@");
+                var dotpos=x.lastIndexOf(".");
+                if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length)
+                {
+                    alert("不是一个有效的 e-mail 地址");
+                    return false;
+                }
+            }
+        </script>
+
+    </body>
+</html>

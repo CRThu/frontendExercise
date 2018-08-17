@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <meta charset="utf-8">
+        <script>
+            // 在字符串中不区分大小写找"runoob"
+            var str = "Visit RUnoob";
+            var patt1 = /runoob/i;
+            document.write(str.match(patt1)+"<br>");
+            
+            // 全文查找 "is"
+            var str="Is this all there is?";
+            var patt1=/is/g;
+            document.write(str.match(patt1)+"<br>");
+
+            // 全文查找和不区分大小写搜索 "is"
+            var str="Is this all there is?";
+            var patt1=/is/gi;
+            document.write(str.match(patt1)+"<br>");
+
+            // 搜索字符串指定的值，根据结果并返回真或假
+            var patt1=new RegExp("e");
+            document.write(patt1.test("The best things in life are free"));
+
+            // 当使用构造函数创造正则对象时，需要常规的字符转义规则（在前面加反斜杠 \）
+            var str = 'runoob';
+            var patt1 = new RegExp('\\w', 'g'); // 有转义作为正则表达式处理
+            var patt2 = new RegExp('\w', 'g');  // 无转义作为字符串处理
+            var patt3 =/\w+/g;  // 与 patt1 效果相同
+            document.write(patt1.test(str)) //输出 true
+            document.write("<br>") 
+            document.write(patt2.test(str)) //输出 false
+            document.write("<br>") 
+            document.write(patt3.test(str)) //输出 true
+            var patt1=new RegExp("e");
+            
+            // 检索字符串中的指定值
+            document.write(patt1.exec("The best things in life are free"));
+        </script>
+    </body>
+</html>

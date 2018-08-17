@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <meta charset="utf-8">
+        <script>
+            window.alert(5 + 6);
+        </script>
+        
+        <p id="demo">我的第一个段落</p>
+        <script>
+        document.getElementById("demo").innerHTML = "段落已修改。";
+        document.write(Date());
+        </script>
+        <br>
+        <button onclick="myFunction()">点我</button>
+        <script>
+            function myFunction()
+            {
+                document.write(Date()); // 在文档已完成加载后执行 document.write，整个 HTML 页面将被覆盖
+            }
+
+            a = 5;
+            b = 6;
+            c = a + b;
+            console.log(c);
+        </script>
+    </body>
+</html>

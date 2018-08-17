@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <meta charset="utf-8">
+        <p>该实例使用 addEventListener() 方法在按钮中添加点击事件。 </p>
+        <button id="myBtn">点我</button>
+        <script>
+            document.getElementById("myBtn").addEventListener("click", function(){alert("Hello World!");});
+        </script>
+        <hr>
+
+        <p>该实例使用 addEventListener() 方法在用户点击按钮时执行函数。</p>
+        <button id="myBtn2">点我</button>
+        <script>
+            document.getElementById("myBtn2").addEventListener("click", myAlertFunction);
+            function myAlertFunction()
+            {
+                alert ("Hello World!");
+            }
+        </script>
+        <hr>
+
+        <p>该实例使用 addEventListener() 方法向同个按钮中添加两个点击事件。</p>
+        <button id="myBtn3">点我</button>
+        <script>
+            var x = document.getElementById("myBtn3");
+            x.addEventListener("click", myFunction);
+            x.addEventListener("click", someOtherFunction);
+            function myFunction()
+            {
+                alert ("Hello World!");
+            }
+            function someOtherFunction()
+            {
+                alert ("函数已执行!");
+            }
+        </script>
+        <hr>
+
+        <p>实例使用 addEventListener() 方法在同一个按钮中添加多个事件。</p>
+        <button id="myBtn4">点我</button>
+        <p id="someevent"></p>
+        <script>
+            var x = document.getElementById("myBtn4");
+            x.addEventListener("mouseover", myMouseOverFunction);
+            x.addEventListener("click", mySecondFunction);
+            x.addEventListener("mouseout", myThirdFunction);
+            function myMouseOverFunction()
+            {
+                document.getElementById("someevent").innerHTML += "Moused over!<br>"
+            }
+            function mySecondFunction()
+            {
+                document.getElementById("someevent").innerHTML += "Clicked!<br>"
+            }
+            function myThirdFunction()
+            {
+                document.getElementById("someevent").innerHTML += "Moused out!<br>"
+            }
+        </script>
+        <hr>
+
+        <p>实例在 window 对象中使用 addEventListener() 方法。</p>
+        <p>尝试重置浏览器的窗口触发 "resize" 事件句柄。</p>
+        <p id="resize"></p>
+        <script>
+            window.addEventListener("resize", function(){document.getElementById("resize").innerHTML = Math.random();});
+        </script>
+        <hr>
+
+        <p>实例演示了在使用 addEventListener() 方法时如何传递参数。</p>
+        <p>点击按钮执行计算。</p>
+        <button id="myBtn5">点我</button>
+        <p id="multiply"></p>
+        <script>
+            var p1 = 5;
+            var p2 = 7;
+            document.getElementById("myBtn5").addEventListener("click", function() {myFunction(p1, p2);});
+            function myFunction(a, b)
+            {
+                var result = a * b;
+                document.getElementById("multiply").innerHTML = result;
+            }
+        </script>
+        <hr>
+
+        <p>实例演示了在添加不同事件监听时，冒泡与捕获的不同。</p>
+        <style>
+            div
+            {
+                background-color: coral;
+                border: 1px solid;
+                padding: 50px;
+            }
+        </style>
+        <div id="myDiv1">
+            <p id="myP1">点击段落，我是冒泡。</p>
+        </div>
+        <br>
+        <div id="myDiv2">
+            <p id="myP2">点击段落，我是捕获。 </p>
+        </div>
+        <script>
+            document.getElementById("myP1").addEventListener("click", function() {alert("你点击了 P 元素!");}, false);
+            document.getElementById("myDiv1").addEventListener("click", function() {alert(" 你点击了 DIV 元素 !");}, false);
+            document.getElementById("myP2").addEventListener("click", function() {alert("你点击了 P2 元素!");}, true);
+            document.getElementById("myDiv2").addEventListener("click", function() {alert("你点击了 DIV2 元素 !");}, true);
+        </script>
+        <hr>
+        
+        <div id="myDIV3"> div 元素添加了 onmousemove 事件句柄，鼠标在桔红色的框内移动时会显示随机数。
+            <p>点击按钮移除 DIV 的事件句柄。</p>
+            <button onclick="removeHandler()" id="myBtn">点我</button>
+        </div>
+        <p id="mousemove"></p>
+        <script>
+            document.getElementById("myDIV3").addEventListener("mousemove", myFunction);
+            function myFunction()
+            {
+                document.getElementById("mousemove").innerHTML = Math.random();
+            }
+            function removeHandler()
+            {
+                document.getElementById("myDIV3").removeEventListener("mousemove", myFunction);
+            }
+        </script>
+
+    </body>
+</html>

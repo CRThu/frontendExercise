@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <meta charset="utf-8">
+        <script>
+            var cars=["Saab","Volvo","BMW"];
+            //var cars=new Array("Saab","Volvo","BMW");
+            /*
+            var cars=new Array();
+            cars[0]="Saab";
+            cars[1]="Volvo";
+            cars[2]="BMW";
+            */
+            for (i=0;i<cars.length;i++)
+                document.write(cars[i] + "<br>");
+            
+            // 创建新方法
+            Array.prototype.myUcase=function()
+            {
+                for (i=0;i<this.length;i++)
+                {
+                    this[i]=this[i].toUpperCase();
+                }
+            }
+            var fruits = ["Banana", "Orange", "Apple", "Mango"];
+            fruits.myUcase();
+            document.write(fruits);
+            
+            // 合并两个数组
+            var hege = ["Cecilie", "Lone"];
+            var stale = ["Emil", "Tobias", "Linus"];
+            var children = hege.concat(stale);
+            document.write(children+"<br>");
+
+            // 合并三个数组
+            var parents = ["Jani", "Tove"];
+            var brothers = ["Stale", "Kai Jim", "Borge"];
+            var children = ["Cecilie", "Lone"];
+            var family = parents.concat(brothers, children);
+            document.write(family+"<br>");
+
+            // 用数组的元素组成字符串
+            var fruits = ["Banana", "Orange", "Apple", "Mango"];
+            document.write(fruits.join('&')+"<br>");
+            
+            // 删除数组的最后一个元素
+            fruits.pop();
+            document.write(fruits+"<br>");
+
+            // 数组的末尾添加新的元素
+            fruits.push("Kiwi");
+            document.write(fruits+"<br>");
+
+            // 元素的顺序反转排序
+            fruits.reverse();
+            document.write(fruits+"<br>");
+
+            // 删除数组的第一个元素
+            fruits.shift();
+            document.write(fruits+"<br>");
+
+            // 截取数组下标 1 到 2 的元素
+            document.write(fruits.slice(1,3)+"<br>");
+
+            // 数组排序（按字母顺序升序）
+            fruits.sort();
+            document.write(fruits+"<br>");
+
+            // 数字排序（按数字顺序升序）
+	        var points = [40,100,1,5,25,10];
+            document.write(points+"<br>");
+	        points.sort(function(a,b){return a-b});
+            document.write(points+"<br>");
+	        points.sort(function(a,b){return b-a});
+            document.write(points+"<br>");
+            
+            // 在数组的第2位置添加一个元素
+            fruits.splice(2,0,"Lemon","Kiwi");
+            document.write(fruits+"<br>");
+
+            // 在数组的开头添加新元素
+            fruits.unshift("Lemon","Pineapple");
+            document.write(fruits+"<br>");
+            
+        </script>
+    </body>
+</html>

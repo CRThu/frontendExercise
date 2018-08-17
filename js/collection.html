@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <meta charset="utf-8">
+        
+        <h2>JavaScript HTML DOM</h2>
+        <p>Hello World!</p>
+        <p>Hello Runoob!</p>
+        <p>点击按钮修改 p 元素的背景颜色。</p>
+        <button onclick="myFunction()">点我</button>
+
+        <script>
+        function myFunction()
+        {
+            var myCollection = document.getElementsByTagName("p");
+            var i;
+            for (i = 0; i < myCollection.length; i++)
+            {
+                myCollection[i].style.color = "red";
+            }
+        }
+        </script>
+    </body>
+</html>

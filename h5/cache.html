@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html manifest="cache.appcache">
+    <body>
+        <meta charset="utf-8">
+        <script>
+            function getDateTime()
+            {
+                var d=new Date();
+                document.getElementById('timePara').innerHTML=d;
+            }
+        </script>
+        <p id="timePara"><button onclick="getDateTime()">获取日期和时间</button></p>
+        <p><img src="img_w3slogo.gif" width="336" height="69"></p>
+        <p>尝试打开(failed) <a href="cache.html" target="_blank">这个页面</a>, 在离线的状态下重新载入这个页面，页面也可以访问。</p>
+    </body>
+</html>

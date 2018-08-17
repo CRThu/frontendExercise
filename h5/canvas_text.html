@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <meta charset="utf-8">
+        <!--创建画布-->
+        <canvas id="myCanvas" width="200" height="100"
+            style="border:1px solid #000000;">
+        </canvas>
+        <script>
+            // 创建文字
+            var c=document.getElementById("myCanvas");
+            var ctx=c.getContext("2d");
+            ctx.font="30px Arial";
+            ctx.fillText("Hello World",10,35);
+            ctx.strokeText("Hello World",10,75);
+        </script>
+    </body>
+</html>

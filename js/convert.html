@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <meta charset="utf-8">
+        <script>
+            document.write(typeof "John"+"<br>");                  // 返回 string
+            document.write(typeof 3.14+"<br>");                    // 返回 number
+            document.write(typeof NaN+"<br>");                     // 返回 number
+            document.write(typeof false+"<br>");                   // 返回 boolean
+            document.write(typeof [1,2,3,4]+"<br>");               // 返回 object
+            document.write(typeof {name:'John', age:34}+"<br>");   // 返回 object
+            document.write(typeof new Date()+"<br>");              // 返回 object
+            document.write(typeof function () {}+"<br>");          // 返回 function
+            document.write(typeof myCar+"<br>");                   // 返回 undefined (如果 myCar 没有声明)
+            document.write(typeof null+"<hr>");                    // 返回 object
+            
+            document.write("John".constructor+"<br>");                 // 返回函数 String()  { [native code] }
+            document.write((3.14).constructor+"<br>");                 // 返回函数 Number()  { [native code] }
+            document.write(false.constructor+"<br>");                  // 返回函数 Boolean() { [native code] }
+            document.write([1,2,3,4].constructor+"<br>");              // 返回函数 Array()   { [native code] }
+            document.write({name:'John', age:34}.constructor+"<br>");  // 返回函数 Object()  { [native code] }
+            document.write(new Date().constructor+"<br>");             // 返回函数 Date()    { [native code] }
+            document.write(function () {}.constructor+"<hr>");         // 返回函数 Function(){ [native code] }
+
+            var fruits = ["Banana", "Orange", "Apple", "Mango"];
+            document.write(isArray(fruits)+"<br>");
+            function isArray(myArray)
+            {
+                return myArray.constructor.toString().indexOf("Array") > -1;
+            }
+
+            var myDate = new Date();
+            document.write(isDate(myDate)+"<br>");
+            function isDate(myDate)
+            {
+                return myDate.constructor.toString().indexOf("Date") > -1;
+            }
+
+            arr = [1,2,3];
+            if(arr instanceof Array)
+            {
+                document.write("arr 是一个数组");
+            }
+            else
+            {
+                document.write("arr 不是一个数组");
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <meta charset="utf-8">
+        <script src="https://cdn.bootcss.com/vue/2.4.2/vue.min.js"></script>
+
+        <!--全局组件实例-->
+        <div id="appcom1">
+            <com1></com1>
+        </div>
+            
+        <script>
+            // 注册
+            Vue.component('com1',
+            {
+                template: '<h1>自定义组件!</h1>'
+            })
+            // 创建根实例
+            new Vue
+            ({
+                el: '#appcom1'
+            })
+        </script>
+        <hr>
+
+        <!--局部组件-->
+        <div id="appcom2">
+            <com2></com2>
+        </div>
+            
+        <script>
+            var Child = {
+                template: '<h1>自定义组件!</h1>'
+            }
+            
+            // 创建根实例
+            new Vue
+            ({
+                el: '#appcom2',
+                components:
+                {
+                    // <com2> 将只在父模板可用
+                    'com2': Child
+                }
+            })
+        </script>
+        <hr>
+
+        <!--Prop-->
+        <div id="appprop">
+                <prop1 message="hello!"></prop1>
+        </div>
+            
+        <script>
+            // 注册
+            Vue.component('prop1', 
+            {
+                // 声明 props
+                props: ['message'],
+                // 同样也可以在 vm 实例中像 “this.message” 这样使用
+                template: '<span>{{ message }}</span>'
+            })
+            // 创建根实例
+            new Vue
+            ({
+                el: '#appprop'
+            })
+        </script>
+        <hr>
+
+        <!--动态 Prop-->
+        <div id="appprop2">
+            <div>
+              <input v-model="parentMsg">
+              <br>
+              <child v-bind:message="parentMsg"></child>
+            </div>
+        </div>
+            
+        <script>
+            // 注册
+            Vue.component('child', 
+                {
+                    // 声明 props
+                    props: ['message'],
+                    // 同样也可以在 vm 实例中像 “this.message” 这样使用
+                    template: '<span>{{ message }}</span>'
+                })
+            // 创建根实例
+            new Vue({
+              el: '#appprop2',
+              data: {
+                parentMsg: '父组件内容'
+              }
+            })
+        </script>
+        <hr>
+
+        <div id="appprop3">
+            <ol>
+                 <todo-item v-for="item in sites" v-bind:todo="item"></todo-item>
+            </ol>
+        </div>
+                
+        <script>
+            Vue.component('todo-item',
+            {
+                props: ['todo'],
+                template: '<li>{{ todo.text }}</li>'
+            })
+            new Vue
+            ({
+                el: '#appprop3',
+                data:
+                {
+                    sites:
+                    [
+                        { text: 'Apple' },
+                        { text: 'Google' },
+                        { text: 'Microsoft' }
+                    ]
+                }
+            })
+        </script>
+        <hr>
+
+        <!--自定义事件-->
+        <!--使用 $on(eventName) 监听事件
+            使用 $emit(eventName) 触发事件-->
+        <div id="appnew">
+            <div id="counter-event-example">
+                <p>{{ total }}</p>
+                <button-counter v-on:increment="incrementTotal"></button-counter>
+                <button-counter v-on:increment="incrementTotal"></button-counter>
+            </div>
+        </div>
+            
+        <script>
+            Vue.component('button-counter',
+            {
+                template: '<button v-on:click="incrementHandler">{{ counter }}</button>',
+                data: function ()
+                {
+                    return {
+                        counter: 0
+                    }
+                },
+                methods: 
+                {
+                    incrementHandler: function () 
+                    {
+                        this.counter += 1
+                        this.$emit('increment')
+                    }
+                },
+            })
+            new Vue
+            ({
+                el: '#counter-event-example',
+                data:
+                {
+                    total: 0
+                },
+                methods:
+                {
+                    incrementTotal: function ()
+                    {
+                        this.total += 1
+                    }
+                }
+            })
+        </script>
+    </body>
+</html>

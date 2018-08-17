@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <meta charset="utf-8">
+        <p>输入数字并点击验证按钮:</p>
+        <input id="id1" type="number" min="100" max="300" required>
+        <button onclick="myFunction()">验证</button>
+        <p>如果输入的数字小于 100 或大于300，会提示错误信息。</p>
+        <p id="demo"></p>
+        <script>
+        function myFunction() {
+            var inpObj = document.getElementById("id1");
+            if (inpObj.checkValidity() == false) {
+                document.getElementById("demo").innerHTML = inpObj.validationMessage;
+            } else {
+                document.getElementById("demo").innerHTML = "输入正确";
+            }
+        }
+        </script>
+        <hr>
+        <input id="id2" type="number" min="100" required>
+        <button onclick="myFunction2()">OK</button>
+        
+        <p id="demo2"></p>
+        
+        <script>
+        function myFunction2() {
+            var txt = "";
+            var inpObj = document.getElementById("id2");
+            if(!isNumeric(inpObj.value)) {
+                txt = "你输入的不是数字";
+            } else if (inpObj.validity.rangeUnderflow) {
+                txt = "输入的值太小了";
+            } else {
+                txt = "输入正确";
+            }
+            document.getElementById("demo2").innerHTML = txt;
+        }
+        
+        // 判断输入是否为数字
+        function isNumeric(n) {
+            return !isNaN(parseFloat(n)) && isFinite(n);
+        }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <meta charset="utf-8">
+        <script>
+            // 直接写入 HTML 输出流
+            document.write("<h1>这是一个标题</h1>");
+            document.write("<p>这是一个段落。</p>");
+        </script>
+        <p id="demo">
+        <script>
+            //改变 HTML 内容
+            x=document.getElementById("demo")  //查找元素
+            x.innerHTML="Hello JavaScript";    //改变内容
+        </script>
+        <br>
+        <!--对事件的反应-->
+        <button type="button" onclick="alert('欢迎!')">alert!</button>
+        <hr>
+        <script>
+            //改变 HTML 图像
+            function changeImage()
+            {
+                element=document.getElementById('myimage')
+                element.src = element.src.match('bulboff')?"./images/pic_bulbon.gif":"./images/pic_bulboff.gif";
+            }
+        </script>
+        <img id="myimage" onclick="changeImage()" src="./images/pic_bulboff.gif" width="100" height="180">
+        <br>
+        <script>
+            // 改变 HTML 样式
+            function myFunction()
+            {
+                x=document.getElementById("demo") // 找到元素
+                x.style.color="#ff0000";          // 改变样式
+            }
+        </script>
+        <button type="button" onclick="myFunction()">改变 HTML 样式</button>
+        <br>
+        <p>请输入数字。如果输入值不是数字，浏览器会弹出提示框。</p>
+        <input id="inputnum" type="text">
+        <script>
+        function myFunction()
+        {
+            var x=document.getElementById("inputnum").value;
+            if(isNaN(x)||x.replace(/(^\s*)|(\s*$)/g,"")=="")
+            {
+                alert("不是数字");
+            }
+        }
+        </script>
+        <button type="button" onclick="myFunction()">判断数字</button>
+            
+    </body>
+</html>

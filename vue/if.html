@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <meta charset="utf-8">
+        <script src="https://cdn.bootcss.com/vue/2.4.2/vue.min.js"></script>
+
+        <!-- if -->
+        <div id="appvif">
+            <p v-if="seen">v-if</p>
+            <template v-if="ok">
+                <h1>Title</h1>
+                <p>p1:abcd</p>
+                <p>p2:abcd</p>
+            </template>
+        </div>
+                
+        <script>
+            new Vue
+            ({
+                el: '#appvif',
+                data:
+                {
+                    seen: true,
+                    ok: true
+                }
+            })
+        </script>
+        <hr>
+
+        <!--if..else-->
+        <div id="appvelse">
+            <div v-if="Math.random() > 0.5">
+                Math.random() &gt; 0.5
+            </div>
+            <div v-else>
+                Math.random() &lt; 0.5
+            </div>
+        </div>
+                
+        <script>
+            new Vue
+            ({
+                el: '#appvelse'
+            })
+        </script>
+        <hr>
+
+        <!--if..elseif..elseif..-->
+        <div id="appvelseif">
+            <div v-if="type === 'A'">
+                A
+            </div>
+            <div v-else-if="type === 'B'">
+                B
+            </div>
+            <div v-else-if="type === 'C'">
+                C
+            </div>
+            <div v-else>
+                Not A/B/C
+            </div>
+        </div>
+                
+        <script>
+            new Vue
+            ({
+                el: '#appvelseif',
+                data:
+                {
+                    type: 'C'
+                }
+            })
+        </script>
+        <hr>
+
+        <!--show-->
+        <div id="appvshow">
+            <h1 v-show="ok">Hello!</h1>
+        </div>
+                
+        <script>
+            new Vue
+            ({
+                el: '#appvshow',
+                data:
+                {
+                    ok: true
+                }
+            })
+        </script>
+    </body>
+</html>

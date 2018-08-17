@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <meta charset="utf-8">
+        <script>
+            var a = 999999999999999;
+            var b = 9999999999999999;
+            document.write(a + "<br>" + b);
+
+            var c = 0.2+0.1;;
+            document.write("<br>" + c);
+
+            var d = 0377;
+            var e = 0xFF; 
+            document.write("<br>" + d);
+            document.write("<br>" + e);
+
+            var myNumber = 128;
+            document.write("<hr>");
+            document.write(myNumber + ' 十进制<br>');
+            document.write(myNumber.toString(16) + ' 十六进制<br>');
+            document.write(myNumber.toString(8) + ' 八进制<br>');
+            document.write(myNumber.toString(2) + ' 二进制<br>');
+
+            document.write("<hr>");
+            myNumber=2;
+            while (myNumber!=Infinity)
+            {
+                myNumber=myNumber*myNumber;
+                document.write(myNumber +'<br>');
+            }
+
+            document.write("<hr>");
+
+            document.write(2/0 + "<br>");
+            document.write(-2/0 + "<br>");
+
+            document.write(isNaN(1000 / "Apple") + "<br>");
+            document.write(isNaN(1000 / "1000") + "<br>");
+            document.write(isNaN(1000 / 0) + "<br>");
+
+            document.write("<hr>");
+            document.write(typeof(123) + "<br>");
+            document.write(typeof(new Number(123)) + "<br>");
+            document.write(typeof(123)===typeof(new Number(123)));
+            
+        </script>
+    </body>
+</html>

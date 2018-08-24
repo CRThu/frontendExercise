@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>慕课网-程序员的梦工厂</title>
+    <script src="https://cdn.bootcss.com/vue/2.2.2/vue.js"></script>
+
+    <div id="app">
+        <card-post v-bind:card="card"></card-post>
+    </div>
+
+    <script>
+        Vue.component('card-post',
+        {
+            props: ['card'],
+            template: `
+                    <div id="class_02" class="class_card_div">
+                        <a href="#">
+                            <img :src='card.src'>
+                            <h3>{{card.h3}}</h3>
+                            <p>
+                                <span>{{card.level1}}</span>
+                                <span>{{card.level2}}</span>
+                                <span>{{card.people}}</span>
+                                <span class="class_card_content_stars">{{card.stars}}</span>
+                            </p>
+                            <p class="class_card_price">{{card.price}}</p>
+                        </a>
+                    </div> 
+                `
+        })
+
+        new Vue(
+        {
+            el: '#app',
+            data:
+            {
+                card:
+                {
+                    src: "./image/class_recommend_1.jpg",
+                    h3: "Vue2.5开发去哪儿网App 从零基础入门到实战项目",
+                    level1: "实战",
+                    level2: "中级",
+                    people: "2741",
+                    stars: "☆☆☆☆☆",
+                    price: "¥266.00",
+                }
+            }
+        })
+    </script>
+
+    </body>
+
+</html>

@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "src": "./image/mooc_teacher_icon_01.jpg",
+        "name": "DellLee",
+        "job": "Web前端攻城师",
+        "abstract": "BAT资深前端工程师，负责数据平台技术研发。曾任去哪儿网高级前端工程师，主导去哪儿网内部前端监控系统设计，负责去哪儿网门票用户端的前端设计开发。曾任国内知名培训机构高级前端讲师，负责React，Angular，Vue，Hybrid，RN的课程讲授，具备丰富前端授课经验。对优雅编程及工程化有深度思考及见解，教会你写代码，同时帮助你把代码写的更漂亮！"
+    },
+    {
+        "id": 2,
+        "src": "./image/mooc_teacher_icon_02.jpg",
+        "name": "风落几番",
+        "job": "全栈工程师",
+        "abstract": "蚂蚁金服测试专家，带领团队从零建立多个大型项目安全测试，针对Web安全测试搭建了基于开源工具的安全测试架构，独立开发基于WebDriver的自动化测试平台，著有《LoadRunner性能测试巧匠训练营》。"
+    },
+    {
+        "id": 3,
+        "src": "./image/mooc_teacher_icon_03.jpg",
+        "name": "大漠风",
+        "job": "全栈工程师",
+        "abstract": "15年的开发经验，目前在一家创业公司担任技术总监，熟悉java、python、前端开发等，有丰富的架构设计、开发经验。喜欢clojure，爱好足球，最近在研究用python做基于机器学习的量化投资"
+    },
+    {
+        "id": 4,
+        "src": "./image/mooc_teacher_icon_04.jpg",
+        "name": "河畔一角",
+        "job": "Web前端工程师",
+        "abstract": "六年前端开发经验，曾任职于IBM、乐视等从事前端开发工作。热爱编程，乐于分享!"
+    },
+    {
+        "id": 5,
+        "src": "./image/mooc_teacher_icon_05.jpg",
+        "name": "bennyhuo",
+        "job": "移动开发工程师",
+        "abstract": "北京邮电大学硕士毕业，就职于腾讯，先后负责腾讯地图Android SDK的开发和维护，期间支持了QQ、微信、滴滴、饿了么、大众点评等客户，后从事腾讯车联相关的应用开发，主攻 Android 开发。 博客：http://www.println.net/ Github：https://github.com/enbandari"
+    }
+]

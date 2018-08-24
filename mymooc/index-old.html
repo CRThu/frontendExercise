@@ -1,0 +1,2588 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>慕课网-程序员的梦工厂</title>
+    <script src="https://cdn.bootcss.com/vue/2.2.2/vue.js"></script>
+    <script>
+        var menu_div_dataset=
+        [
+            {
+                title1:"前沿技术",
+                link1:["微服务","区块链","以太坊","人工智能","机器学习","深度学习","计算机视觉","数据分析&挖掘"],
+                title2:"",
+                link2:[""],
+                recommend:
+                [
+                    {
+                        src:"./image/menu_div_101.jpg",
+                        h3:"区块链入门与去中心化应用实战",
+                        price:"¥199.00",
+                        level:"初级",
+                        people:"570"
+                    },
+                    {
+                        src:"./image/menu_div_102.jpg",
+                        h3:"区块链技术核心概念与原理讲解",
+                        price:"",
+                        level:"入门",
+                        people:"25082"
+                    },
+                    {
+                        src:"./image/menu_div_103.jpg",
+                        h3:"基于Python玩转人工智能最火框架 TensorFlow应用实践",
+                        price:"¥299.00",
+                        level:"中级",
+                        people:"1279"
+                    },
+                    {
+                        src:"./image/menu_div_104.jpg",
+                        h3:"Python人工智能常用库Numpy使用入门",
+                        price:"",
+                        level:"初级",
+                        people:"21381"
+                    },
+                ]
+            },
+            {
+                title1:"前端开发",
+                link1:["HTML/CSS","JavaScript","Vue.js","React.JS","Angular","Node.js","jQuery","Bootstrap","Sass/Less","WebApp","前端工具"],
+                title2:"",
+                link2:[""],
+                recommend:
+                [
+                    {
+                        src:"./image/menu_div_201.jpg",
+                        h3:"HTML5与CSS3实现动态网页",
+                        price:"¥628.00",
+                        level:"5步/29课",
+                        people:"1839"
+                    },
+                    {
+                        src:"./image/menu_div_202.jpg",
+                        h3:"微信小程序入门与实战 常用组件API开发技巧项目实战",
+                        price:"¥149.00",
+                        level:"初级",
+                        people:"14140"
+                    },
+                    {
+                        src:"./image/menu_div_203.jpg",
+                        h3:"前端跳槽必备 揭秘一线互联网公司高级前端JavaScript面试",
+                        price:"¥366.00",
+                        level:"高级",
+                        people:"605"
+                    },
+                    {
+                        src:"./image/menu_div_204.jpg",
+                        h3:"前端JavaScript面试技巧",
+                        price:"¥149.00",
+                        level:"初级",
+                        people:"2819"
+                    },
+                ]
+            },
+            {
+                title1:"后端开发",
+                link1:["Java","SpringBoot","Python","爬虫","Django","Go","PHP","C","C++","C#","Ruby"],
+                title2:"",
+                link2:[""],
+                recommend:
+                [
+                    {
+                        src:"./image/menu_div_301.jpg",
+                        h3:"C++零基础入门  热门编程语言  二级考试必备",
+                        price:"¥428.00",
+                        level:"3步/34课",
+                        people:"423"
+                    },
+                    {
+                        src:"./image/menu_div_302.jpg",
+                        h3:"Java并发编程入门与高并发面试",
+                        price:"¥299.00",
+                        level:"初级",
+                        people:"2129"
+                    },
+                    {
+                        src:"./image/menu_div_303.jpg",
+                        h3:"全网最热Python3入门+进阶 更快上手实际开发",
+                        price:"¥366.00",
+                        level:"初级",
+                        people:"5484"
+                    },
+                    {
+                        src:"./image/menu_div_304.jpg",
+                        h3:"最火Python3 玩转实用小工具",
+                        price:"¥166.00",
+                        level:"初级",
+                        people:"138"
+                    },
+                ]
+            },
+            {
+                title1:"移动开发",
+                link1:["Android","iOS","React","native","WEEX"],
+                title2:"",
+                link2:[""],
+                recommend:
+                [
+                    {
+                        src:"./image/menu_div_401.jpg",
+                        h3:"零基础入门Android语法与界面",
+                        price:"¥499.00",
+                        level:"5步/43课",
+                        people:"2058"
+                    },
+                    {
+                        src:"./image/menu_div_402.jpg",
+                        h3:"新浪微博资深大牛全方位剖析 iOS 高级面试",
+                        price:"¥366.00",
+                        level:"高级",
+                        people:"442"
+                    },
+                    {
+                        src:"./image/menu_div_403.jpg",
+                        h3:"BAT大牛亲授技能+技巧  Android面试快速充电升级",
+                        price:"¥288.00",
+                        level:"中级",
+                        people:"3103"
+                    },
+                    {
+                        src:"./image/menu_div_404.jpg",
+                        h3:"Android通用框架设计与完整电商APP开发",
+                        price:"¥348.00",
+                        level:"高级",
+                        people:"1407"
+                    },
+                ]
+            },
+            {
+                title1:"算法&数学",
+                link1:["算法与数据结构","数学"],
+                title2:"云计算&大数据",
+                link2:["大数据","Hadoop","Spark","Hbase","Storm","云计算","AWS","Docker","Kubernetes"],
+                recommend:
+                [
+                    {
+                        src:"./image/menu_div_501.jpg",
+                        h3:"以慕课网日志分析为例  进入大数据 Spark SQL 的世界",
+                        price:"¥366.00",
+                        level:"中级",
+                        people:"1003"
+                    },
+                    {
+                        src:"./image/menu_div_502.jpg",
+                        h3:"轻松愉快之玩转SpringData",
+                        price:"",
+                        level:"中级",
+                        people:"23623"
+                    },
+                    {
+                        src:"./image/menu_div_503.jpg",
+                        h3:"系统学习Docker 践行DevOps理念",
+                        price:"¥299.00",
+                        level:"中级",
+                        people:"763"
+                    },
+                    {
+                        src:"./image/menu_div_504.jpg",
+                        h3:"HBase入门",
+                        price:"",
+                        level:"初级",
+                        people:"17360"
+                    },
+                ]
+            },
+            {
+                title1:"运维&测试",
+                link1:["运维","自动化运维","Linux","测试","功能测试","性能测试","自动化测试","接口测试","安全测试"],
+                title2:"数据库",
+                link2:["MySQL","Redis","MongoDB","Oracle","SQL","Server","NoSql"],
+                recommend:
+                [
+                    {
+                        src:"./image/menu_div_601.jpg",
+                        h3:"阿里大牛亲授  阿里云主机(ECS)与CentOS7实战",
+                        price:"¥288.00",
+                        level:"中级",
+                        people:"103"
+                    },
+                    {
+                        src:"./image/menu_div_602.jpg",
+                        h3:"使用java构建和维护接口自动化测试框架",
+                        price:"",
+                        level:"中级",
+                        people:"18927"
+                    },
+                    {
+                        src:"./image/menu_div_603.jpg",
+                        h3:"Web自动化测试  Selenium基础到企业应用",
+                        price:"¥266.00",
+                        level:"中级",
+                        people:"905"
+                    },
+                    {
+                        src:"./image/menu_div_604.jpg",
+                        h3:"Linux系统管理",
+                        price:"",
+                        level:"初级",
+                        people:"61106"
+                    },
+                ]
+            },
+            {
+                title1:"UI设计",
+                link1:["模型制作","动效动画","设计基础","设计工具","APPUI设计","产品交互"],
+                title2:"游戏",
+                link2:["Unity","3D Cocos2d-x"],
+                recommend:
+                [
+                    {
+                        src:"./image/menu_div_701.jpg",
+                        h3:"移动端App UI 设计入门与实战",
+                        price:"¥199.00",
+                        level:"中级",
+                        people:"359"
+                    },
+                    {
+                        src:"./image/menu_div_702.jpg",
+                        h3:"高薪设计师必修课 AE移动UI动效设计从入门到实战",
+                        price:"¥199.00",
+                        level:"中级",
+                        people:"100"
+                    },
+                    {
+                        src:"./image/menu_div_703.jpg",
+                        h3:"Axure入门初体验",
+                        price:"",
+                        level:"入门",
+                        people:"46099"
+                    },
+                    {
+                        src:"./image/menu_div_704.jpg",
+                        h3:"前端工程师必备的PS技能——切图篇",
+                        price:"",
+                        level:"初级",
+                        people:"230311"
+                    },
+                ]
+            }
+        ];
+    </script>
+    <style>
+        .header_ul
+        {
+            list-style-type: none;          /*移除列表前小标志*/
+            margin: 0;                      /*将边距和填充设置为0*/
+            padding: 0;                     /*将边距和填充设置为0*/
+            overflow: hidden;               /*防止li 列表溢出*/
+            background-color: #FFFFFF;    /*背景白色*/
+            font: 16px/1.5 "PingFang SC","微软雅黑","Microsoft YaHei";
+        }
+
+        .header_ul li
+        {
+            /* float: left;*/               /*使用浮动块元素的幻灯片彼此相邻 */
+            display: inline-block;
+            line-height: 72px;
+        }
+
+        .header_ul li a
+        {
+            display: block;                 /*块元素*/
+            color: #4D555D;               /*文字颜色*/
+            text-align: center;             /*文字居中*/
+            padding: 0px 15px;
+            text-decoration: none;
+        }
+        /* 鼠标移动到选项上修改背景颜色 */
+        .header_ul li a:hover
+        {
+            background-color: #eeeeee;
+        }
+        /*添加active类来表示选项被选中*/
+        /* .active
+        {
+            background-color: lightblue;
+            color: black;
+        } */
+        #header
+        {
+            position: relative;             /*导航容器位置标定*/
+            left: 0px;
+            top: 0px;
+            width: 1200px;                  /*导航容器大小标定*/
+            height: 72px;
+            overflow: hidden;               /*隐藏移除部分*/
+        }
+        .header_logo
+        {
+            position: absolute;             /*网页图标位置标定*/
+            left: 0px;
+            top: 0px;
+            display: inline-block;
+            width: 180px;
+            height: 72px;
+        }
+        .header_href
+        {
+            position: absolute;             /*导航栏位置标定*/
+            left: 140px;
+            top: 0px;
+            display: inline-block;
+            width: 480px;
+            height: 72px;
+        }
+        #header_search
+        {
+            position: absolute;             /*搜索容器位置标定*/
+            left: 630px;
+            top: 0px;
+            margin: 0;                      /*将边距和填充设置为0*/
+            padding: 0;                     /*将边距和填充设置为0*/
+            display: inline-block;
+            width: 180px;
+            height: 72px;
+        }
+        .header_search_href
+        {
+            position: absolute;             /*搜索推荐链接位置标定*/
+            left: 0px;
+            top: 24px;
+            /* display: inline-block; */
+            width: 50px;
+            height: 24px;
+            z-index: 2;
+            background-color: #f3f5f7;
+            color: #4D555D;
+            text-decoration: none;
+
+            font: 12px/1.5 "PingFang SC","微软雅黑","Microsoft YaHei";
+            border-radius: 12px;
+            line-height: 24px;
+            padding: 0 8px;
+        }
+        .header_search_href_1
+        {
+            left: 10px;                      /*override搜索推荐链接位置*/
+            top: 24px;
+        }
+        .header_search_href_2
+        {
+            left: 85px;                     /*override搜索推荐链接位置*/
+            top: 24px;
+        }
+        .header_search_input
+        {
+            position: absolute;             /*搜索输入框位置标定*/
+            left: 0px;
+            top: 10px;
+            width: 175px;
+            height: 50px;
+            z-index: 1;
+            border:0px solid white;       /*边框宽度以及颜色*/
+        }
+        .header_search_button
+        {
+            position: absolute;             /*搜索按钮位置标定*/
+            left: 155px;
+            top: 24px;
+            width: 20px;
+            height: 24px;
+            z-index: 2;
+        }
+        .header_search_hr
+        {
+            position: absolute;             /*搜索下横线位置标定*/
+            left: 0px;
+            top: 55px;
+            width: 180px;
+            z-index: 2;
+        }
+        .header_user
+        {
+            position: absolute;             /*用户导航容器标定*/
+            left: 850px;
+            top: 0px;
+            display: inline-block;
+            width: 320px;
+            height: 72px; 
+        }
+        .header_user li
+        {
+
+        }
+        #cart_div
+        {
+            position:absolute;              /*悬浮窗位置标定*/
+            left:730px;
+            top:90px;
+            z-index: 100;
+            /* display: inline-block; */
+            display: none;
+            width: 300px;
+            height: 420px;
+            border: 1px solid rgb(3, 238, 255,0.65);
+            background: rgba(168, 211, 255,0.35);
+        }
+        #menu
+        {
+            position: relative;             /*主菜单容器位置标定*/
+            left: 25px;
+            top: 25px;
+            width: 1150px;
+            height: 450px;
+            margin: 0 auto;
+            /* overflow: hidden; */
+        }
+        .menu_list
+        {
+            position: absolute;             /*菜单位置标定*/
+            left: 0px;
+            top: 0px;
+            display: inline-block;
+            list-style-type: none;
+            margin: 0;
+            /* text-align: center; */
+            padding: 0px 25px;
+            /* padding: 0px 0px; */
+            width: 200px;
+            background-color: #2b333b;
+            color: #aaadb1;
+        }
+        .menu_list li
+        {
+            line-height: 60px;
+        }
+        #menu_recommend
+        {
+            position: absolute;             /*推荐课程位置标定*/
+            left: 250px;
+            top: 0px;
+            display: inline-block;
+            width: 800px;
+            height: 300px;
+        }
+        #img_dot
+        {
+            position: absolute;             /*图片选择点位置标定*/
+            left: 600px;
+            top: 270px;
+            display: inline-block;
+            width: 200px;
+            height: 20px;
+            color: white;
+            cursor: pointer;
+        }
+        #menu_div
+        {
+            position: absolute;              /*菜单详细课程悬浮窗位置标定*/
+            left:250px;
+            top:0px;
+            z-index: 100;
+            /* display: inline-block; */
+            display: none;
+            width: 700px;
+            height: 420px;
+            /* border: 1px solid rgb(3, 238, 255,0.65); */
+            background: #ffd8d8;
+        }
+        .menu_div_classify
+        {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            width: 700px;
+            height: 220px;
+        }
+        .menu_div_classify span
+        {
+            font: 14px/1.5 "PingFang SC","微软雅黑","Microsoft YaHei";
+            font-size: 14px;
+            color: #F20D0D;
+            line-height: 24px;
+            font-weight: 700;
+        }
+        .menu_div_classify a
+        {
+            font: 14px/1.5 "PingFang SC","微软雅黑","Microsoft YaHei";
+            font-size: 14px;
+            color: #4D555D;
+            line-height: 22px;
+            margin-right: 24px;
+            display: inline-block;
+            text-decoration: none;
+        }
+        #menu_div_t1
+        {
+            position: absolute;
+            left: 20px;
+            top: 20px;
+        }
+        #menu_div_d1
+        {
+            position: absolute;
+            left: 20px;
+            top: 50px;
+        }
+        #menu_div_t2
+        {
+            position: absolute;
+            left: 20px;
+            top: 120px;
+        }
+        #menu_div_d2
+        {
+            position: absolute;
+            left: 20px;
+            top: 150px;
+        }
+        .menu_div_recommend
+        {
+            position: absolute;
+            left: 0px;
+            top: 220px;
+            width: 700px;
+            height: 200px;
+            background-color: #F8FAFC;
+        }
+        .menu_div_recommend_card
+        {
+            position: absolute;
+            width: 320px;
+            height: 60px;
+            /* background-color: red; */
+        }
+        .menu_div_recommend_card_1
+        {
+            left: 20px;
+            top: 25px;
+        }
+        .menu_div_recommend_card_2
+        {
+            left: 360px;
+            top: 25px;
+        }
+        .menu_div_recommend_card_3
+        {
+            left: 20px;
+            top: 110px;
+        }
+        .menu_div_recommend_card_4
+        {
+            left: 360px;
+            top: 110px;
+        }
+        .menu_div_recommend_card img
+        {
+            position: absolute;
+            left: 30px;
+            top: 10px;
+            width: 64px;
+            height: 42px;
+        }
+        .menu_div_recommend_card h3
+        {
+            position: absolute;
+            margin: 0px 0px;
+            left: 100px;
+            top: 10px;
+            width: 220px;
+            height: 18px;
+            color: black;
+            font: 12px/1.5 "PingFang SC","微软雅黑","Microsoft YaHei";
+
+            overflow: hidden;           /*省略号对超出部分省略*/
+            text-overflow:ellipsis;
+            white-space: nowrap;
+        }
+        .menu_div_recommend_info
+        {
+            position: absolute;
+            margin: 0px 0px;
+            left: 100px;
+            top: 30px;
+            color: #4D555D;
+            font: 12px/1.5 "PingFang SC","微软雅黑","Microsoft YaHei";
+        }
+        #classification
+        {
+            position: relative;
+            left: 250px;
+            top: 300px;
+
+            width: 800px;
+            height: 120px;
+
+            overflow: hidden;
+        }
+        .cl_div
+        {
+            position: relative;
+            width: 155px;
+            height: 120px;
+            display: inline-block;
+        }
+        .cl_div img
+        {
+            position: absolute;
+            width: 36px;
+            height: 36px;
+            left: 65px;
+            top: 22px;
+            display: inline-block;
+        }
+        .cl_div a p
+        {
+            position: absolute;
+            width: 180px;
+            height: 21px;
+            display: inline-block;
+            text-align: center;
+            /* margin: 5px 5px; */
+        }
+        .cl_div_p1
+        {
+            left: 0px;
+            top: 50px;
+            font: 14px/1.5 "PingFang SC","微软雅黑","Microsoft YaHei";
+            color: #07111B;
+        }
+        .cl_div_p2
+        {
+            left: 0px;
+            top: 70px;
+            font: 12px/1.5 "PingFang SC","微软雅黑","Microsoft YaHei";
+            color: #93999F;
+        }
+        #class_recommend
+        {
+            position: relative;
+            width: 1170px;
+            height: 264px;
+            left: 25px;
+            top: 25px;
+            overflow: hidden;       /*隐藏多余的 card*/
+            margin:0 auto;          /*div屏幕居中*/
+        }
+        #class_new
+        {
+            position: relative;
+            width: 1170px;
+            height: 550px;
+            left: 25px;
+            top: 25px;
+            overflow: hidden;       /*隐藏多余的 card*/
+            margin:0 auto;          /*div屏幕居中*/
+        }
+        #class_basic
+        {
+            position: relative;
+            width: 1170px;
+            height: 550px;
+            left: 25px;
+            top: 25px;
+            overflow: hidden;       /*隐藏多余的 card*/
+            margin:0 auto;          /*div屏幕居中*/
+        }
+        .class_cards_h3
+        {
+            position: relative;
+            left: 0px;
+            top: 0px;
+            text-align: center;
+        }
+        .class_card_div
+        {
+            display: inline-block;
+            position: relative;
+            width: 216px;
+            height: 252px;
+            margin: 5px 5px;        /*卡片之间加入间隔*/
+        }
+        .class_card_div:hover > a > h3
+        {
+            color: red;
+        }
+        .class_card_div a img
+        {
+            position: absolute;
+            width: 216px;
+            height: 120px;
+            top: 0px;
+            left: 0px;
+            border-radius: 10px;
+        }
+        .class_card_div a h3
+        {
+            position: absolute;
+            width: 200px;
+            height: 46px;
+            left: 0px;
+            top: 120px;
+            font: 16px/1.5 "PingFang SC","微软雅黑","Microsoft YaHei";
+            line-height: 24px;
+            color: #07111B;
+            
+            overflow:hidden;            /*多行省略号*/
+            text-overflow:ellipsis; 
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            /*-webkit-line-clamp用来限制在一个块元素显示的文本的行数。 为了实现该效果，它需要组合其他的WebKit属性。常见结合属性：
+            display: -webkit-box; 必须结合的属性 ，将对象作为弹性伸缩盒子模型显示 。
+            -webkit-box-orient 必须结合的属性 ，设置或检索伸缩盒对象的子元素的排列方式 。*/
+        }
+        .class_card_div a p
+        {
+            position: absolute;
+            width: 200px;
+            height: 20px;
+            left: 0px;
+            top: 180px;
+            font: 12px/1.5 "PingFang SC","微软雅黑","Microsoft YaHei";
+            color: #93999F;
+        }
+        .class_card_content_stars
+        {
+            
+        }
+        .class_card_price
+        {
+            top: 205px!important;
+            color: #07111B!important;
+        }
+        .class_article
+        {
+            position: relative;
+            width:1216px;
+            height: 1600px;
+            /* -webkit-column-width: 372px;
+            -moz-column-width: 372px;
+            column-width: 372px; */
+            /* -webkit-column-count: 3;
+            -moz-column-count: 3;
+            column-count: 3; */
+
+            background-color: #f8fafc;
+        }
+        .class_article_card
+        {
+            /* float:left; */
+            width:372px;
+            /* background-color: #ffd8d8; */
+            /* margin: 15px 7px 0px 7px; */
+            border-radius:5px;                 /*圆边框*/
+            box-shadow:2px 2px 5px #f2f5f6;      /*阴影*/
+            background-color: white;
+            position: absolute;
+        }
+        .class_article_type
+        {
+            position: absolute;
+            left: 40px;
+            top: 30px;
+            font:14px/1.5 "PingFang SC","微软雅黑","Microsoft YaHei";
+        }
+        .blue
+        {
+            color: rgba(0,140,200,.6)!important;
+        }
+        .green
+        {
+            color: rgba(0,180,60,.6)!important;
+        }
+        .question_title
+        {
+            font-size: 14px!important;
+        }
+        .best-label
+        {
+            margin: 0px;
+            padding: 0px;
+            font-size: 12px;
+            color: #07111B;
+        }
+        .best-answer
+        {
+            margin: 0px;
+            padding: 0px;
+            font-size: 12px;
+            color: #4D555D;
+        }
+        .class_article_header
+        {
+            position: absolute;
+            left: 40px;
+            top: 60px;
+            font: 16px/1.5 "PingFang SC","微软雅黑","Microsoft YaHei";
+            color: #07111B;
+        }
+        .class_article_abstract
+        {
+            position: absolute;
+            left: 40px;
+            top: 110px;
+            width: 300px;
+            font: 12px/1.5 "PingFang SC","微软雅黑","Microsoft YaHei";
+            color: #4d555d;
+        }
+        .class_topic_abstract
+        {
+            position: absolute;
+            left: 40px;
+            top: 150px;
+            width: 300px;
+            font: 12px/1.5 "PingFang SC","微软雅黑","Microsoft YaHei";
+            color: #4d555d;
+        }
+        .class_article_info
+        {
+            position: absolute;
+            left: 40px;
+            bottom: 40px;
+            font: 12px/1.5 "PingFang SC","微软雅黑","Microsoft YaHei";
+            color: #93999F
+        }
+        .class_article_all
+        {
+            position: absolute;
+            right: 40px;
+            bottom: 40px;
+            font: 12px/1.5 "PingFang SC","微软雅黑","Microsoft YaHei";
+        }
+        .class_topic_all
+        {
+            position: absolute;
+            right: 40px;
+            top: 270px;
+            font: 12px/1.5 "PingFang SC","微软雅黑","Microsoft YaHei";
+        }
+        .class_topic_line
+        {
+            position: absolute;
+            left: 40px;
+            top: 310px;
+            margin: 24px 0px 24px 0px;
+            width: 308px;
+            height: 1px;
+            background-color: #D9DDE1;
+        }
+        .class_topic_line span
+        {
+            position: relative;
+            top: -10px;
+            font-size: 12px;
+            padding-right: 12px;
+            color: #93999F;
+            background-color: #fff;
+            line-height: 16px;
+        }
+        .class_topic_past_header
+        {
+            position: absolute;
+            left: 40px;
+            top: 360px;
+            width: 308px;
+            height: 248px;
+            /* background-color: #99a1a6; */
+        }
+        .class_topic_past_header_div
+        {
+            display: inline-block;
+            position: relative;
+            width: 308px;
+            height: 72px;
+            /* background-color: coral; */
+            margin: 0px 0px 8px 0px;
+        }
+        .class_topic_past_header_div a
+        {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            width: 224px;
+            height: 72px;
+            
+            font:14px/1.5 "PingFang SC","微软雅黑","Microsoft YaHei",Helvetica,"Helvetica Neue",Tahoma,Arial,sans-serif;
+            color: #4D555D;
+            text-decoration: none;
+        }
+        .class_topic_past_header_div img
+        {
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            width: 72px;
+            height: 72px;
+
+            border-radius: 5px;
+        }
+        .mooc_teachers
+        {
+            position: relative;
+            left: 0px;
+            height: 0px;
+            /* width: 1216px; */
+            height: 408px;
+            /* background-color: #4D555D; */
+            background: url("./image/imooc_teacher_bk.jpg") center center no-repeat;
+        }
+        .mooc_teachers_h3
+        {
+            position: absolute;
+            width: 1152px;
+            height: 36px;
+            text-align: center;
+            top: 20px;
+
+            font: 20px/1.5 "PingFang SC","微软雅黑","Microsoft YaHei";
+            font-weight: 600;
+            color: white;
+            text-align: center;
+        }
+        .mooc_teachers_cards_div
+        {
+            position: absolute;
+            left: 20px;
+            top: 150px;
+            width: 1152px;
+            height: 248px;
+            /* background-color: #ffd8d856; */
+        }
+        .mooc_teachers_card
+        {
+            display: inline-block;
+            position: relative;
+            top:-30px;
+            width: 216px;
+            height: 248px;
+            margin:0px 5px 0px 5px;
+            background-color: #ffffffb0;
+            border-radius: 10px;
+            /* overflow: hidden; */
+        }
+        .mooc_teachers_card:hover >a >img
+        {
+            width: 60px;
+            height: 60px;
+            left: 80px;
+        }
+        .mooc_teachers_card:hover >a >.mooc_teacher_name
+        {
+            display: none;
+        }
+        .mooc_teachers_card:hover >a >.mooc_teacher_job
+        {
+            display: none;
+        }
+        .mooc_teachers_card:hover >a >.mooc_teacher_abstract
+        {
+            top:60px;
+            -webkit-line-clamp: 8;
+        }
+        .mooc_teachers_card a
+        {
+            text-decoration: none;
+        }
+        .mooc_teachers_card a img
+        {
+            position: absolute;
+            left: 65px;
+            top: -20px;
+            width: 96px;
+            height: 96px;
+            border-radius: 50px;
+        }
+        .mooc_teachers_card a span
+        {
+            position: absolute;
+            width: 216px;
+
+            /* display: inline-block; */
+            text-align: center;             /*文字居中*/
+            /* color: black; */
+
+            overflow:hidden;            /*多行省略号*/
+            text-overflow:ellipsis; 
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3;
+
+            font: 14px/1.5 "PingFang SC","微软雅黑","Microsoft YaHei",Helvetica,"Helvetica Neue",Tahoma,Arial,sans-serif;
+        }
+        .mooc_teacher_name
+        {
+            top: 90px;
+            font-size: 16px!important;
+            color: #07111B;
+        }
+        .mooc_teacher_job
+        {
+            top: 115px;
+            font-size: 12px!important;
+            color: #4D555D;
+        }
+        .mooc_teacher_abstract
+        {
+            top: 160px;
+            width: 166px!important;
+            padding: 0px 25px;              /*两边空开距离*/
+            font-size: 12px!important;
+            color: #4D555D;
+        }
+        #mooc_teachers_card_p1
+        {
+            /* display: none; */
+            display: inline-block;
+        }
+        #mooc_teachers_card_p2
+        {
+            display: none;
+            /* display: inline-block; */
+        }
+        #mooc_teachers_card_p3
+        {
+            display: none;
+            /* display: inline-block; */
+        }
+        #card_dot
+        {
+            position: absolute;             /*图片选择点位置标定*/
+            left: 600px;
+            top: 375px;
+            display: inline-block;
+            width: 100px;
+            height: 20px;
+            color: white;
+            cursor: pointer;
+        }
+        .stars_mod
+        {
+            position: relative;
+            left: 0px;
+            top: 0px;
+            margin: 0 auto;
+            padding: 36px 48px;
+
+            /* background-color: pink; */
+            width: 1152px;
+            height: 374px;
+        }
+        .stars_mod h3
+        {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            width:1152px;
+            height: 38px;
+            text-align: center;
+            color: #4D555D;
+            font: 20px/1.5 "PingFang SC","微软雅黑","Microsoft YaHei";
+        }
+        .stars_leader_list
+        {
+            position: absolute;
+            left: 0px;
+            top: 50px;
+            width: 544px;
+            height: 98px;
+            margin: 38px 304px 48px 304px;
+            /* background-color: #d5dee7; */
+        }
+        .stars_leader_div
+        {
+            float: left;
+            position: relative;
+            width: 136px;
+            height: 98px;
+            margin: 0px;
+            padding: 0px;
+            /* background-color: antiquewhite; */
+            text-align: center;
+        }
+        .stars_leader_img
+        {
+            width: 56px;
+            height: 56px;
+            margin: 0px;
+            padding: 0px;
+            border-radius: 56px;
+        }
+        .stars_leader_p1
+        {
+            width: 136px;
+            height: 16px;
+            margin: 8px 0px 0px 0px;
+            padding: 0px;
+
+            color: #07111B;
+            line-height: 16px;
+            font: 14px/1.5 "PingFang SC","微软雅黑","Microsoft YaHei";
+            text-align: center;
+        }
+        .stars_leader_p2
+        {
+            width: 136px;
+            height: 18px;
+            margin: 0px;
+            padding: 0px;
+
+            color: #93999F;
+            font-weight: 400;
+            font: 12px/1.5 "PingFang SC","微软雅黑","Microsoft YaHei";
+            text-align: center;
+        }
+        .stars_friends_list
+        {
+            position: absolute;
+            left: 0px;
+            top: 230px;
+            width: 858px;
+            height: 152px;
+            margin: 0px 147px;
+            /* background-color: #d5dee7; */
+        }
+        .stars_friends_div
+        {
+            float: left;
+            height: 50px;
+            width: 50px;
+            margin: 0px 28px 24px 0px;
+        }
+        .stars_friends_div img
+        {
+            height: 48px;
+            width: 48px;
+            border-radius: 48px;
+        }
+        .stars_friends_div_img_line2
+        {
+            margin-left: 40px;
+        }
+        .footer
+        {
+            position: relative;
+            width: 1193px;
+            height: 60px;
+            padding: 36px 0px 36px 0px;
+            background-color: #f8fafc;
+        }
+        .footer_link
+        {
+            position: absolute;
+            left: 30px;
+            top: 40px;
+        }
+        .footer_link a
+        {
+            text-decoration: none;
+            font: 14px/1.5 "PingFang SC","微软雅黑","Microsoft YaHei",Helvetica,"Helvetica Neue",Tahoma,Arial,sans-serif;
+            margin: 0 10px;
+            color: #99a1a6;
+        }
+        .footer_copyright
+        {
+            position: absolute;
+            left: 30px;
+            top: 70px;
+            font: 12px/1.5 "PingFang SC","微软雅黑","Microsoft YaHei",Helvetica,"Helvetica Neue",Tahoma,Arial,sans-serif;
+            color: #99a1a6;
+        }
+        .footer_info
+        {
+            position: absolute;
+            left: 1000px;
+            top: 30px;
+            font: 12px/1.5 "PingFang SC","微软雅黑","Microsoft YaHei",Helvetica,"Helvetica Neue",Tahoma,Arial,sans-serif;
+            color:#4D555D;
+        }
+        .footer_info_wx
+        {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            width: 64px;
+            height: 50px;
+        }
+        .footer_info_wx a
+        {
+            display: inline-block;
+            background-image: url(./image/wechat_icon.png);
+            background-size: 32px 32px;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 64px;
+            height: 32px;
+        }
+        .footer_info_weibo
+        {
+            position: absolute;
+            left: 80px;
+            top: 0px;
+            width: 64px;
+            height: 20px;
+        }
+        .footer_info_weibo a
+        {
+            display: inline-block;
+            background-image: url(./image/weibo_icon.png);
+            background-size: 32px 32px;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 48px;
+            height: 32px;
+        }
+        .elevator
+        {
+            position: fixed;
+            width: 26px;
+            height: 227px;
+
+            padding: 0 16px;
+            bottom: 150px;
+            margin-top: -140px;
+            right: 0;
+
+            z-index: 900;
+            /* background-color: pink; */
+
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 4px 12px 0 rgba(7,17,27,.1);
+        }
+        .elevator a
+        {
+            display: inline-block;
+            background-size: 23px 23px;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 26px;
+            height: 24px;
+            padding: 14px 0px 14px 0px;
+        }
+        .elevator_img1
+        {
+            background-image: url(./image/goto_1.png);
+        }
+        .elevator_img2
+        {
+            background-image: url(./image/goto_2.png);
+        }
+        .elevator_img3
+        {
+            background-image: url(./image/goto_3.png);
+        }
+        .elevator_img4
+        {
+            background-image: url(./image/goto_4.png);
+        }
+    </style>
+    <script>
+        // cart鼠标悬停事件回调
+        function cart_mouse_event(status)
+        {
+            document.getElementById("cart_div").style.display=status?"inline-block":"none";
+        }
+        
+        // menu_recommend 图片定时切换
+        var menu_recommend_imgx=1;
+        var menu_recommend_mouseover_flag=0;
+        setInterval(function(){recommend_img_tim_change()},3000);
+        function recommend_img_tim_change()
+        {
+            if(!menu_recommend_mouseover_flag)
+            {
+                // alert("cart_img_change!");
+                menu_recommend_imgx<6 ? menu_recommend_imgx++ : menu_recommend_imgx=1;
+                img_and_dot_change(menu_recommend_imgx);
+            }
+        }
+        function img_and_dot_change(dot_id)
+        {
+            menu_recommend_imgx=dot_id;
+            for(var i=1;i<=6;i++)
+                document.getElementById("img_dot_"+i).innerText="○";
+            document.getElementById("img_dot_"+dot_id).innerText="●";
+            document.getElementById('menu_recommend').src="./image/recommend_"+dot_id+".jpg";
+        }
+
+        // 图片鼠标悬停事件回调
+        function menu_recommend_mouse_event(status)
+        {
+            menu_recommend_mouseover_flag=status?1:0;
+        }
+
+        // 菜单悬浮窗回调
+        function menu_mouse_event(menu_id,status)
+        {
+            document.getElementById("menu_div").style.display=status?"inline-block":"none";
+            if(menu_id!=0)
+            {
+                //document.getElementById("menu_div").innerText="menu_mouse_event("+menu_id+","+status+")";
+                
+                // 更新文字部分
+                // menu_div_dataset title1/2 link1/2
+                // menu_div_d1> <a href="#">微服务</a>
+                document.getElementById("menu_div_t1").innerText=menu_div_dataset[menu_id-1].title1;
+                document.getElementById("menu_div_d1").innerHTML="";
+                for(var i=0;i<menu_div_dataset[menu_id-1].link1.length;i++)
+                    document.getElementById("menu_div_d1").innerHTML+="<a href=\"#\">"+menu_div_dataset[menu_id-1].link1[i]+"</a>";
+                document.getElementById("menu_div_t2").innerText=menu_div_dataset[menu_id-1].title2;
+                document.getElementById("menu_div_d2").innerHTML="";
+                for(var i=0;i<menu_div_dataset[menu_id-1].link2.length;i++)
+                    document.getElementById("menu_div_d2").innerHTML+="<a href=\"#\">"+menu_div_dataset[menu_id-1].link2[i]+"</a>";
+                // 更新推荐课程部分
+                // menu_div_dataset recommend1/2/3/4:{src h3 price level people}
+                //<div class="menu_div_recommend_card menu_div_recommend_card_1">
+                // <a href="#">
+                //     <img src="./image/menu_div_101.jpg">
+                //     <h3>区块链入门与去中心化应用实战</h3>
+                //     <div class="menu_div_recommend_info">
+                //         <span>¥199.00</span>
+                //         <span>初级</span>
+                //         <span>570</span>
+                //     </div>
+                // </a>
+                for(var i=0;i<4;i++)
+                    document.getElementsByClassName("menu_div_recommend_card")[i].innerHTML=
+                    "<a href=\"#\">                                                             \
+                        <img src=\""+menu_div_dataset[menu_id-1].recommend[i].src+"\">          \
+                        <h3>"+menu_div_dataset[menu_id-1].recommend[i].h3+"</h3>                \
+                        <div class=\"menu_div_recommend_info\">                                 \
+                            <span>"+menu_div_dataset[menu_id-1].recommend[i].price+"</span>     \
+                            <span>"+menu_div_dataset[menu_id-1].recommend[i].level+"</span>     \
+                            <span>"+menu_div_dataset[menu_id-1].recommend[i].people+"</span>    \
+                        </div>                                                                  \
+                    </a>";
+            }
+        }
+
+        // 加载完成后布局
+        function min_index(a,b,c)
+        {
+            // return a<=b?(a<=c?a:c):(b<=c?b:c);
+            return a<=b?(a<=c?0:2):(b<=c?1:2);
+        }
+        function max_index(a,b,c)
+        {
+            // return a<=b?(a<=c?a:c):(b<=c?b:c);
+            return a>=b?(a>=c?0:2):(b>=c?1:2);
+        }
+        function loaded()
+        {
+            // alert(min_index(0,0,0));
+            // 三列布局
+            var column_width=372;
+            var column_y=[20,20,20];   // 列高度指针
+            var column_todo_pointer=0;     // 待放 div 指针
+
+            var column_gap_top=20;
+            var column_gap_left=20;
+            var column_margin_left=20;
+
+            for(var i=0;i<13;i++)
+            {
+                column_todo_pointer=min_index(column_y[0],column_y[1],column_y[2]);
+                // console.log("counter:"+i+",column_todo_pointer:"+column_todo_pointer+",column_y:"+column_y);
+                document.getElementsByClassName("class_article_card")[i].style.left=column_margin_left+column_todo_pointer*(column_width+column_gap_left)+"px";
+                document.getElementsByClassName("class_article_card")[i].style.top=column_y[column_todo_pointer]+"px";
+                column_y[column_todo_pointer]+=Number(document.getElementsByClassName("class_article_card")[i].style.height.replace("px",""));
+                column_y[column_todo_pointer]+=column_gap_top;
+            }
+            // console.log("counter:"+i+",column_todo_pointer:"+column_todo_pointer+",column_y:"+column_y);
+            // failed to autosize class_article
+            // document.getElementsByClassName("class_article")[0].style.height=column_y[max_index(column_y[0],column_y[1],column_y[2])]+"px!important";
+            // alert(column_y[max_index(column_y[0],column_y[1],column_y[2])]);
+        }
+
+        // mooc_teachers_card 图片定时切换
+        var mooc_teachers_card_px=1;
+        var mooc_teachers_card_mouseover_flag=0;
+        setInterval(function(){mooc_teachers_card_tim_change()},5000);
+        function mooc_teachers_card_tim_change()
+        {
+            if(!mooc_teachers_card_mouseover_flag)
+            {
+                // alert("cart_img_change!");
+                mooc_teachers_card_px<3 ? mooc_teachers_card_px++ : mooc_teachers_card_px=1;
+                mooc_teachers_card_and_dot_change(mooc_teachers_card_px);
+            }
+        }
+        function mooc_teachers_card_and_dot_change(dot_id)
+        {
+            mooc_teachers_card_px=dot_id;
+            for(var i=1;i<=3;i++)
+                document.getElementById("card_dot_"+i).innerText="○";
+            document.getElementById("card_dot_"+dot_id).innerText="●";
+
+            document.getElementById('mooc_teachers_card_p1').style.display="none";
+            document.getElementById('mooc_teachers_card_p2').style.display="none";
+            document.getElementById('mooc_teachers_card_p3').style.display="none";
+            if(dot_id==1)
+                document.getElementById('mooc_teachers_card_p1').style.display="inline-block";
+            if(dot_id==2)
+                document.getElementById('mooc_teachers_card_p2').style.display="inline-block";
+            if(dot_id==3)
+                document.getElementById('mooc_teachers_card_p3').style.display="inline-block";
+        }
+        
+        // 图片鼠标悬停事件回调
+        function mooc_teachers_card_mouse_event(status)
+        {
+            mooc_teachers_card_mouseover_flag=status?1:0;
+        }
+    </script>
+</head>
+<body onload="loaded()">
+    <div id="header">
+        <a href="#"><img class="header_logo" src="./image/logo.png"></a>
+        <ul class="header_ul header_href ">
+            <li><a class="active" href="#">免费课程</a></li>
+            <li><a href="#">职业路径</a></li>
+            <li><a href="#">实战</a></li>
+            <li><a href="#">猿问</a></li>
+            <li><a href="#">手记</a></li>
+            <li><a href="#">找工作</a></li>
+        </ul>
+        <div id="header_search">
+            <a class="header_search_href header_search_href_1" href="#">前端入门</a>
+            <a class="header_search_href header_search_href_2" href="#">Java基础</a>
+            <input class="header_search_input" type="text" name="searchit">
+            <button class="header_search_button" onclick="alert('?')"></button>
+            <span class="header_search_hr"><hr></span>
+        </div>
+        <ul class="header_ul header_user">
+            <li><a href="#">下载 APP</a></li>
+            <li onmouseover="cart_mouse_event(1)" onmouseout="cart_mouse_event(0)"><a href="#">购物车</a></li>
+            <li><a href="#">登录</a></li>
+            <li><a href="#">注册</a></li>
+        </ul>
+    </div>
+    <hr>
+    <div id="cart_div">cart_div</div>
+    <div id="menu">
+        <ul class="menu_list">
+            <li onmouseover="menu_mouse_event(1,1)" onmouseout="menu_mouse_event(1,0)">前沿/区块链/人工智能</li>
+            <li onmouseover="menu_mouse_event(2,1)" onmouseout="menu_mouse_event(2,0)">前端/小程序/JS</li>
+            <li onmouseover="menu_mouse_event(3,1)" onmouseout="menu_mouse_event(3,0)">后端/JAVA/Python</li>
+            <li onmouseover="menu_mouse_event(4,1)" onmouseout="menu_mouse_event(4,0)">移动/Android/ios</li>
+            <li onmouseover="menu_mouse_event(5,1)" onmouseout="menu_mouse_event(5,0)">云计算/大数据/容器</li>
+            <li onmouseover="menu_mouse_event(6,1)" onmouseout="menu_mouse_event(6,0)">运维/测试/数据库<li>
+            <li onmouseover="menu_mouse_event(7,1)" onmouseout="menu_mouse_event(7,0)">UI设计/3D动画/游戏<li>
+        </ul>
+        <a href="#"><img id="menu_recommend" src="./image/recommend_1.jpg" onmouseover="menu_recommend_mouse_event(1)" onmouseout="menu_recommend_mouse_event(0)"></a>
+        <div id="img_dot" onmouseover="menu_recommend_mouse_event(1)" onmouseout="menu_recommend_mouse_event(0)">
+            <span id="img_dot_1" onclick="img_and_dot_change(1)">●</span>
+            <span id="img_dot_2" onclick="img_and_dot_change(2)">○</span>
+            <span id="img_dot_3" onclick="img_and_dot_change(3)">○</span>
+            <span id="img_dot_4" onclick="img_and_dot_change(4)">○</span>
+            <span id="img_dot_5" onclick="img_and_dot_change(5)">○</span>
+            <span id="img_dot_6" onclick="img_and_dot_change(6)">○</span>
+        </div>
+        <div id="menu_div" onmouseover="menu_mouse_event(0,1)" onmouseout="menu_mouse_event(0,0)">
+            <div class="menu_div_classify">
+                <span id="menu_div_t1">前沿技术</span>
+                <div id=menu_div_d1>
+                    <!-- <a href="#">微服务</a>
+                    <a href="#">区块链</a>
+                    <a href="#">以太坊</a>
+                    <a href="#">人工智能</a>
+                    <a href="#">机器学习</a>
+                    <a href="#">深度学习</a>
+                    <a href="#">计算机视觉</a>
+                    <a href="#">数据分析&挖掘</a> -->
+                </div>
+                <span id="menu_div_t2">前沿技术</span>
+                <div id=menu_div_d2>
+                    <!-- <a href="#">微服务</a>
+                    <a href="#">区块链</a>
+                    <a href="#">以太坊</a>
+                    <a href="#">人工智能</a>
+                    <a href="#">机器学习</a>
+                    <a href="#">深度学习</a>
+                    <a href="#">计算机视觉</a>
+                    <a href="#">数据分析&挖掘</a> -->
+                </div>
+            </div>
+            <div class="menu_div_recommend">
+                <div class="menu_div_recommend_card menu_div_recommend_card_1">
+                    <!-- <a href="#">
+                        <img src="./image/menu_div_101.jpg">
+                        <h3>区块链入门与去中心化应用实战</h3>
+                        <div class="menu_div_recommend_info">
+                            <span>¥199.00</span>
+                            <span>初级</span>
+                            <span>570</span>
+                        </div>
+                    </a> -->
+                </div>
+                <div class="menu_div_recommend_card menu_div_recommend_card_2">
+                    <!-- <a href="#">
+                        <img src="./image/menu_div_102.jpg">
+                        <h3>区块链技术核心概念与原理讲解</h3>
+                        <div class="menu_div_recommend_info">
+                            <span></span>
+                            <span>入门</span>
+                            <span>25082</span>
+                        </div>
+                    </a> -->
+                </div>
+                <div class="menu_div_recommend_card menu_div_recommend_card_3">
+                    <!-- <a href="#">
+                        <img src="./image/menu_div_103.jpg">
+                        <h3>基于Python玩转人工智能最火框架 TensorFlow应用实践</h3>
+                        <div class="menu_div_recommend_info">
+                            <span>¥299.00</span>
+                            <span>中级</span>
+                            <span>1279</span>
+                        </div>
+                    </a> -->
+                </div>
+                <div class="menu_div_recommend_card menu_div_recommend_card_4">
+                    <!-- <a href="#">
+                        <img src="./image/menu_div_104.jpg">
+                        <h3>Python人工智能常用库Numpy使用入门</h3>
+                        <div class="menu_div_recommend_info">
+                            <span></span>
+                            <span>初级</span>
+                            <span>21381</span>
+                        </div>
+                    </a> -->
+                </div>
+            </div>
+        </div>
+        
+        
+        <div id="classification">
+            <div class="cl_div">
+                <a href="#">
+                    <img src="./image/classification_1.png">
+                    <p class="cl_div_p1">Web前端攻城狮</p>
+                    <p class="cl_div_p2">互联网时代最火爆的技术</p>
+                </a>
+            </div>
+            <div class="cl_div">
+                <a href="#">
+                    <img src="./image/classification_1.png">
+                    <p class="cl_div_p1">Java攻城狮</p>
+                    <p class="cl_div_p2">综合就业排名第一</p>
+                </a>
+            </div>
+            <div class="cl_div">
+                <a href="#">
+                    <img src="./image/classification_1.png">
+                    <p class="cl_div_p1">Android攻城狮</p>
+                    <p class="cl_div_p2">移动设备市场份额第一</p>
+                </a>
+            </div>
+            <div class="cl_div">
+                <a href="#">
+                    <img src="./image/classification_1.png">
+                    <p class="cl_div_p1">PHP攻城狮</p>
+                    <p class="cl_div_p2">世界上最好的语言：）</p>
+                </a>
+            </div>
+            <div class="cl_div">
+                <a href="#">
+                    <img src="./image/classification_1.png">
+                    <p class="cl_div_p1">iOS攻城狮</p>
+                    <p class="cl_div_p2">可能是全球最好用的系统</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <h3 class="class_cards_h3">实战推荐</h3>
+    <div id="class_recommend">
+        <!-- <div id="class_01" class="class_card_div">
+            <a href="#">
+                <img src="./image/class_recommend_1.jpg">
+                <h3>Vue2.5开发去哪儿网App 从零基础入门到实战项目</h3>
+                <p>
+                    <span>实战</span>
+                    <span>中级</span>
+                    <span>2741</span>
+                    <span class="class_card_content_stars">☆☆☆☆☆</span>
+                </p>
+                <p class="class_card_price">¥266.00</p>
+            </a>
+        </div> -->
+
+        <!-- <div id="app"> -->
+        <!-- <card-post v-bind:card="card"></card-post> -->
+        <card-post 
+            v-for="card in cards"
+            v-bind:key="card.id"
+            v-bind:card="card">
+        </card-post>
+        <!-- </div> -->
+    </div>
+
+    <h3 class="class_cards_h3">新上好课</h3>
+    <div id="class_new">
+        <card-post 
+            v-for="card in cards"
+            v-bind:key="card.id"
+            v-bind:card="card">
+        </card-post>
+    </div>
+
+    <h3 class="class_cards_h3">新手入门</h3>
+    <div id="class_basic">
+        <card-post 
+            v-for="card in cards"
+            v-bind:key="card.id"
+            v-bind:card="card">
+        </card-post>
+    </div>
+
+    <!-- <h3 class="class_cards_h3">技能提升</h3> -->
+    <!-- <h3 class="class_cards_h3">前沿技术</h3> -->
+
+    <h3 class="class_cards_h3">精彩手记及猿问</h3>
+
+    <div class="class_article">
+        <div class="class_article_card" style="height:665px;">
+            <!-- div1 -->
+            <div class="class_article_type green">
+                热门话题
+            </div>
+
+            <div class="class_article_header green">
+                #【内推第2波】#
+                <br>
+                打工奋斗7万落京户VS自主创业牧马城市，如何抉择？
+            </div>
+            <div class="class_topic_abstract">
+                毕业求职？跳槽加薪？纠结滋润加班还是苦练x年自主创业？速速提问互撩，你在撩的极有可能就是你的Boss！激不激动？惊不惊喜？Offer已在这里！你的简历在哪里？Scott老师邮箱：wolf18387@qq.comJeson老师邮箱：jeson@imoocc.com
+            </div>
+            <div class="class_topic_all green">
+                <span>了解详情 →</span>
+            </div>
+            <div class="class_topic_line">
+                <span>往期回顾</span>
+            </div>
+            <div class="class_topic_past_header">
+                <div class="class_topic_past_header_div">
+                    <a href="#">
+                        #【获奖名单戳查看更多】#
+                        <br>
+                        当我们谈论Java时，我们都谈些什么？
+                    </a>
+                    <img src="./image/class_topic_past_01.jpg">
+                </div>
+                <div class="class_topic_past_header_div">
+                    <a href="#">
+                        #【内推第1波】#
+                        <br>
+                        直击BAT面试机会！行业大佬在线答疑
+                    </a>
+                    <img src="./image/class_topic_past_02.jpg">
+                </div>
+                <div class="class_topic_past_header_div">
+                    <a href="#">
+                        #【花式填坑】第23期#
+                        <br>
+                        运维进化篇：成为Python DevOps工程师有哪些必备条件？
+                    </a>
+                    <img src="./image/class_topic_past_03.jpg">
+                </div>
+            </div>
+            <div class="class_article_all green">
+                <span>更多往期话题 →</span>
+            </div>
+        </div>
+        <div class="class_article_card" style="height:295px;">
+            <!-- div2 -->
+            <div class="class_article_type blue">
+                手记文章
+            </div>
+            <div class="class_article_header">
+                绅士向，纯原生250行，拼图小游戏
+            </div>
+            <div class="class_article_abstract">
+                拼图小游戏 先来预览，咳咳，这个比上次那个地鼠会好看点…… 代码是可以设置难度的，3就是9,9就是81…… 相比来说，此程序难度可是远远高过打地鼠的，希望小伙伴能跟上~
+            </div>
+            <div class="class_article_info">
+                <span>浏览</span>
+                <span>536</span>
+                <span>推荐</span>
+                <span>5</span>
+            </div>
+            <div class="class_article_all blue">
+                <span>阅读全文 →</span>
+            </div>
+        </div>
+        <div class="class_article_card" style="height:319px;">
+            <!-- div3 -->
+            <div class="class_article_type blue">
+                手记文章
+            </div>
+            <div class="class_article_header">
+                gradle核心之Task详解
+            </div>
+            <div class="class_article_abstract">
+                前几天我们讲解了groovy的一些源码，也讲解了gradle的一些内容，我们知道gradle是groovy的一个重要的使用场景，那就是自动化构建，gradle里有许多核心的概念，比如Project,Dependency,Plugin,Setting,File等等。但，要说到最重要的一个点，那必须是gradle的Task,因为无论我们在Task之前写了多少代码，如果没有Task,那一切都是没有意义的...
+            </div>
+            <div class="class_article_info">
+                <span>浏览</span>
+                <span>294</span>
+                <span>推荐</span>
+                <span>5</span>
+            </div>
+            <div class="class_article_all blue">
+                <span>阅读全文 →</span>
+            </div>
+        </div>
+        <div class="class_article_card" style="height:319px;">
+            <!-- div4 -->
+            <div class="class_article_type blue">
+                手记文章
+            </div>
+            <div class="class_article_header">
+                初识大数据
+            </div>
+            <div class="class_article_abstract">
+                最近几年IT技术的发展真的是日新月异，什么云计算、大数据、机器学习、AI等等名词层出不穷。多数程序员内心其实是恐慌的，我也时常会感到危机感。每每看到“xx培训，大数据就业，钱景好”我嘴上说不要，身体还是很诚实的。 大数据已经深入我们的生活当中，今天呢我们也不聊4个V（Volume 规模大、Varity 多样性、Velocity 高速性、Value 价值大）也不谈数据挖掘，机...
+            </div>
+            <div class="class_article_info">
+                <span>浏览</span>
+                <span>542</span>
+                <span>推荐</span>
+                 <span>5</span>
+            </div>
+            <div class="class_article_all blue">
+                <span>阅读全文 →</span>
+            </div>
+        </div>
+        <div class="class_article_card" style="height:343px;">
+            <!-- div5 -->
+            <div class="class_article_type blue">
+                    手记文章
+                </div>
+                <div class="class_article_header">
+                    3种常见的代码规范类型
+                </div>
+                <div class="class_article_abstract">
+                        从事web开发已有7个年头，经历过几个团队和不少项目，也面试过一些开发者。 发现不同公司对代码规范这一块的要求相差很大，有的公司甚至没有规范。 究其缘由，无非是项目紧张，没有时间整理。 久而久之，随着项目不断变大，维护变得困难，各种问题暴露出来：代码可读性差、修改容易出bug、逻辑混乱。。。 所以在技术上稍有追求的团队都意识到规范的重要性。 代码规范的意义 先思考一个问题：什么是好的代码？ 你可能...
+                </div>
+                <div class="class_article_info">
+                    <span>浏览</span>
+                    <span>1202</span>
+                    <span>推荐</span>
+                     <span>10</span>
+                </div>
+                <div class="class_article_all blue">
+                    <span>阅读全文 →</span>
+                </div>
+        </div>
+        <div class="class_article_card" style="height:367px;">
+            <!-- div6 -->
+            <div class="class_article_type blue">
+                手记文章
+            </div>
+            <div class="class_article_header">
+                多线程并发的使用、学习与测试
+            </div>
+            <div class="class_article_abstract">
+                前提 之前写过一篇手记 面试中并发类问题的准备和学习 ，得到许多学员不错的反馈。但依然有这样的问题，许多人已经知道并发有这些内容，也知道这些知识点该如何用，但是却不知道该如何在实际项目中使用。基于以上，这篇手记将在之前手记的基础上，继续介绍多线程并发的使用、学习与测试。 也希望这篇手记能帮助 Java并发编程与高并发解决方案 的学员更好的学习课程。 使用 先说说多线程的使用。多线程本身是与我们开发...
+            </div>
+            <div class="class_article_info">
+                <span>浏览</span>
+                <span>3286</span>
+                <span>推荐</span>
+                <span>14</span>
+            </div>
+            <div class="class_article_all blue">
+                <span>阅读全文 →</span>
+            </div>
+        </div>
+        <div class="class_article_card" style="height:367px;">
+            <!-- div7 -->
+            <div class="class_article_type blue">
+                手记文章
+            </div>
+            <div class="class_article_header">
+                【队列源码】消息队列beanstalkd源码详解
+            </div>
+            <div class="class_article_abstract">
+                1.消息队列简介计算机软件发展的一个重要目标是降低软件耦合性；网站架构中，系统解耦合的重要手段就是异步，业务之间的消息传递不是同步调用，而是将一个业务操作分为多个阶段，每个阶段之间通过共享数据的方式异步执行；在分布式系统中，多个服务器集群通过分布式消息队列实现异步；分布式消息队列可以看作是内存队列的分布式部署；分布式消息队列架构图通常如下所示：消息队列是典型的生产者消费者模式，两者不存在直接调用，...            </div>
+            <div class="class_article_info">
+                <span>浏览</span>
+                <span>318</span>
+                <span>推荐</span>
+                <span>6</span>
+            </div>
+            <div class="class_article_all blue">
+                <span>阅读全文 →</span>
+            </div>
+        </div>
+        <div class="class_article_card" style="height:217px;">
+            <!-- div8 -->
+            <div class="class_article_type green">
+                相关猿问
+            </div>
+            <div class="class_article_header question_title">
+                请问,为何最后那个函数function conf()里的className不能生效?
+            </div>
+            <div class="class_article_abstract">
+                <p class="best-label">已采纳回答</p>
+                <p class="best-answer">css权重问题</p>
+            </div>
+            <div class="class_article_all green">
+                <span>共</span>
+                <span>3</span>
+                <span>个回答 →</span>
+            </div>
+        </div>
+        <div class="class_article_card" style="height:241px;">
+            <!-- div9 -->
+            <div class="class_article_type green">
+                相关猿问
+            </div>
+            <div class="class_article_header question_title">
+                【有奖问答】与大咖交流前端JS与框架开发，免费赢取前端图书（11.28-12.4）
+            </div>
+            <div class="class_article_abstract">
+                <p class="best-label">最赞回答</p>
+                <p class="best-answer">我觉得不管学习哪门语言，到后面总还是要学习一下规范，程序员的素养必不可少啊！！</p>
+            </div>
+            <div class="class_article_all green">
+                <span>共</span>
+                <span>128</span>
+                <span>个回答 →</span>
+            </div>
+        </div>
+        <div class="class_article_card" style="height:268px;">
+            <!-- div10 -->
+            <div class="class_article_type green">
+                相关猿问
+            </div>
+            <div class="class_article_header question_title">
+                vue中点击显示隐藏为什么用这个等于号？
+            </div>
+            <div class="class_article_abstract">
+                <p class="best-label">已采纳回答</p>
+                <p class="best-answer">首先这里的@click="show=!show”是执行（this.show = !this.show）这样一个语句而不是判断语句；相当于这样@click="clickToggle”clickToggle () {this.show = !this.show}</p>
+            </div>
+            <div class="class_article_all green">
+                <span>共</span>
+                <span>1</span>
+                <span>个回答 →</span>
+            </div>
+        </div>
+        <div class="class_article_card" style="height:217px;">
+            <!-- div11 -->
+            <div class="class_article_type green">
+                相关猿问
+            </div>
+            <div class="class_article_header question_title">
+                各位猿或者媛，一般几点睡啊。有时忍住头痛看java到很晚，第二天就头痛一整天
+            </div>
+            <div class="class_article_abstract">
+                <p class="best-label">已采纳回答</p>
+                <p class="best-answer">没有什么事情是需要熬夜完成的</p>
+            </div>
+            <div class="class_article_all green">
+                <span>共</span>
+                <span>283</span>
+                <span>个回答 →</span>
+            </div>
+        </div>
+        <div class="class_article_card" style="height:217px;">
+            <!-- div12 -->
+            <div class="class_article_type green">
+                相关猿问
+            </div>
+            <div class="class_article_header question_title">
+                java好学吗.??pp
+            </div>
+            <div class="class_article_abstract">
+                <p class="best-label">最赞回答</p>
+                <p class="best-answer">挺好的！</p>
+            </div>
+            <div class="class_article_all green">
+                <span>共</span>
+                <span>180</span>
+                <span>个回答 →</span>
+            </div>
+        </div>
+        <div class="class_article_card" style="height:217px;">
+            <!-- div13 -->
+            <div class="class_article_type green">
+                相关猿问
+            </div>
+            <div class="class_article_header question_title">
+                话说，大家想编程的最初初衷是什么
+            </div>
+            <div class="class_article_abstract">
+                <p class="best-label">最赞回答</p>
+                <p class="best-answer">说兴趣的话有没有人打我....</p>
+            </div>
+            <div class="class_article_all green">
+                <span>共</span>
+                <span>443</span>
+                <span>个回答 →</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="mooc_teachers" onmouseover="mooc_teachers_card_mouse_event(1)" onmouseout="mooc_teachers_card_mouse_event(0)">
+        <h3 class="mooc_teachers_h3">慕课精英名师</h3>
+        <div class="mooc_teachers_cards_div">
+            <!-- <a href="#">
+                <img src="./image/mooc_teacher_icon_01.jpg">
+                <span class="mooc_teacher_name">DellLee</span>
+                <span class="mooc_teacher_job">Web前端攻城师</span>
+                <span class="mooc_teacher_abstract">BAT资深前端工程师，负责数据平台技术研发。曾任去哪儿网高级前端工程师，
+                    主导去哪儿网内部前端监控系统设计，负责去哪儿网门票用户端的前端设计开发。
+                    曾任国内知名培训机构高级前端讲师，负责React，Angular，Vue，Hybrid，RN的课程讲授，
+                    具备丰富前端授课经验。对优雅编程及工程化有深度思考及见解，教会你写代码，同时帮助你把代码写的更漂亮！</span>
+            </a> -->
+            <div id="mooc_teachers_card_p1">
+                <teacher-card 
+                    v-for="card in cards"
+                    v-bind:key="card.id"
+                    v-bind:card="card">
+                </teacher-card>
+            </div>
+            <div id="mooc_teachers_card_p2">
+                <teacher-card 
+                    v-for="card in cards"
+                    v-bind:key="card.id"
+                    v-bind:card="card">
+                </teacher-card>
+            </div>
+            <div id="mooc_teachers_card_p3">
+                <teacher-card 
+                    v-for="card in cards"
+                    v-bind:key="card.id"
+                    v-bind:card="card">
+                </teacher-card>
+            </div>
+        </div>
+        <div id="card_dot" onmouseover="mooc_teachers_card_mouse_event(1)" onmouseout="mooc_teachers_card_mouse_event(0)">
+            <span id="card_dot_1" onclick="mooc_teachers_card_and_dot_change(1)">●</span>
+            <span id="card_dot_2" onclick="mooc_teachers_card_and_dot_change(2)">○</span>
+            <span id="card_dot_3" onclick="mooc_teachers_card_and_dot_change(3)">○</span>
+        </div>
+    </div>
+
+    <div class="stars_mod">
+        <h3>吊炸天全明星</h3>
+        <div class="stars_leader_list">
+            <!-- div1 -->
+            <div class="stars_leader_div">
+                <img class="stars_leader_img" src="./image/stars_leader_img_1.jpg">
+                <p class="stars_leader_p1">Tender10</p>
+                <p class="stars_leader_p2">风骚课程学霸</p>
+            </div>
+            <div class="stars_leader_div">
+                <img class="stars_leader_img" src="./image/stars_leader_img_2.jpg">
+                <p class="stars_leader_p1">onemoo</p>
+                <p class="stars_leader_p2">神秘解疑大神</p>
+            </div>
+            <div class="stars_leader_div">
+                <img class="stars_leader_img" src="./image/stars_leader_img_3.jpg">
+                <p class="stars_leader_p1">波斯汪</p>
+                <p class="stars_leader_p2">智慧文章王者</p>
+            </div>
+            <div class="stars_leader_div">
+                <img class="stars_leader_img" src="./image/stars_leader_img_4.jpg">
+                <p class="stars_leader_p1">weixin_dina_0</p>
+                <p class="stars_leader_p2">慕课第一土豪</p>
+            </div>
+        </div>
+        <div class="stars_friends_list">
+            <!-- div2 -->
+            <div class="stars_friends_div">
+                <img src="./image/stars_friend_img_01.jpg">
+            </div>
+            <div class="stars_friends_div">
+                <img src="./image/stars_friend_img_02.jpg">
+            </div>
+            <div class="stars_friends_div">
+                <img src="./image/stars_friend_img_03.jpg">
+            </div>
+            <div class="stars_friends_div">
+                <img src="./image/stars_friend_img_04.jpg">
+            </div>
+            <div class="stars_friends_div">
+                <img src="./image/stars_friend_img_05.jpg">
+            </div>
+            <div class="stars_friends_div">
+                <img src="./image/stars_friend_img_06.jpg">
+            </div>
+            <div class="stars_friends_div">
+                <img src="./image/stars_friend_img_07.jpg">
+            </div>
+            <div class="stars_friends_div">
+                <img src="./image/stars_friend_img_08.jpg">
+            </div>
+            <div class="stars_friends_div">
+                <img src="./image/stars_friend_img_09.jpg">
+            </div>
+            <div class="stars_friends_div">
+                <img src="./image/stars_friend_img_10.jpg">
+            </div>
+            <div class="stars_friends_div">
+                <img src="./image/stars_friend_img_11.jpg">
+            </div>
+            <div class="stars_friends_div stars_friends_div_img_line2">
+                <img src="./image/stars_friend_img_12.jpg">
+            </div>
+            <div class="stars_friends_div">
+                <img src="./image/stars_friend_img_13.jpg">
+            </div>
+            <div class="stars_friends_div">
+                <img src="./image/stars_friend_img_14.jpg">
+            </div>
+            <div class="stars_friends_div">
+                <img src="./image/stars_friend_img_15.jpg">
+            </div>
+            <div class="stars_friends_div">
+                <img src="./image/stars_friend_img_16.jpg">
+            </div>
+            <div class="stars_friends_div">
+                <img src="./image/stars_friend_img_17.jpg">
+            </div>
+            <div class="stars_friends_div">
+                <img src="./image/stars_friend_img_18.jpg">
+            </div>
+            <div class="stars_friends_div">
+                <img src="./image/stars_friend_img_19.jpg">
+            </div>
+            <div class="stars_friends_div">
+                <img src="./image/stars_friend_img_20.jpg">
+            </div>
+            <div class="stars_friends_div">
+                <img src="./image/stars_friend_img_21.jpg">
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer_link">
+            <a href="#">企业合作</a>
+            <a href="#">人才招聘</a>
+            <a href="#">联系我们</a>
+            <a href="#">讲师招募</a>
+            <a href="#">常见问题</a>
+            <a href="#">意见反馈</a>
+            <a href="#">慕课大学</a>
+            <a href="#">友情链接</a>
+        </div>
+        <div class="footer_copyright">
+            <p>© 2018 imooc.com  京ICP备 12003892号-11</p>
+        </div>
+        <div class="footer_info">
+            <div class="footer_info_wx">
+                <a href="#"></a>
+                <p>官方公众号</p>
+            </div>
+            <div class="footer_info_weibo">
+                <a href="#"></a>
+                <p>官方微博</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="elevator">
+        <a href="#" class="elevator_img1"></a>
+        <a href="#" class="elevator_img2"></a>
+        <a href="#" class="elevator_img3"></a>
+        <a href="#" class="elevator_img4"></a>
+    </div>
+    <script>
+        /*vue 生成 card*/
+        Vue.component('card-post',
+        {
+            props: ['card'],
+            template:
+            `
+                <div class="class_card_div">
+                    <a href="#">
+                        <img :src='card.src'>
+                        <h3>{{card.h3}}</h3>
+                        <p>
+                            <span>{{card.level1}}</span>
+                            <span>{{card.level2}}</span>
+                            <span>{{card.people}}</span>
+                            <span class="class_card_content_stars">{{card.stars}}</span>
+                        </p>
+                        <p class="class_card_price">{{card.price}}</p>
+                    </a>
+                </div> 
+            `
+        })
+        Vue.component('teacher-card',
+        {
+            props: ['card'],
+            template:
+            `
+                <div class="mooc_teachers_card">
+                    <a href="#">
+                        <img :src='card.src'>
+                        <span class="mooc_teacher_name">{{card.name}}</span>
+                        <span class="mooc_teacher_job">{{card.job}}</span>
+                        <span class="mooc_teacher_abstract">{{card.abstract}}</span>
+                    </a>
+                </div>
+            `
+        })
+
+        // var card=
+        // {
+        //     src:"./image/class_recommend_1.jpg",
+        //     h3:"Vue2.5开发去哪儿网App 从零基础入门到实战项目",
+        //     level1:"实战",
+        //     level2:"中级",
+        //     people:"2741",
+        //     stars:"☆☆☆☆☆",
+        //     price:"¥266.00",
+        // };
+        // new Vue({
+        //     //  el: '#app',
+        //     el: '#class_recommend',
+        //      data:
+        //      {
+        //          card:
+        //          {
+        //             src:"./image/class_recommend_1.jpg",
+        //             h3:"Vue2.5开发去哪儿网App 从零基础入门到实战项目",
+        //             level1:"实战",
+        //             level2:"中级",
+        //             people:"2741",
+        //             stars:"☆☆☆☆☆",
+        //             price:"¥266.00",
+        //          }
+        //      }
+        //  })
+        new Vue
+        ({
+            //  el: '#app',
+            el: '#class_recommend',
+            data:
+            {
+                cards:
+                [
+                    {
+                        id:1,
+                        src:"./image/class_recommend_1.jpg",
+                        h3:"Vue2.5开发去哪儿网App 从零基础入门到实战项目",
+                        level1:"实战",
+                        level2:"中级",
+                        people:"2741",
+                        stars:"☆☆☆☆☆",
+                        price:"¥266.00",
+                    },
+                    {
+                        id:2,
+                        src:"./image/class_recommend_2.jpg",
+                        h3:"java设计模式精讲  Debug 方式+内存分析",
+                        level1:"实战",
+                        level2:"中级",
+                        people:"262",
+                        stars:"☆☆☆☆☆",
+                        price:"¥299.00",
+                    },
+                    {
+                        id:3,
+                        src:"./image/class_recommend_3.jpg",
+                        h3:"玩转数据结构 从入门到进阶",
+                        level1:"实战",
+                        level2:"中级",
+                        people:"1756",
+                        stars:"☆☆☆☆☆",
+                        price:"¥299.00",
+                    },
+                    {
+                        id:4,
+                        src:"./image/class_recommend_4.jpg",
+                        h3:"NLP 实践 TensorFlow 打造聊天机器人",
+                        level1:"实战",
+                        level2:"中级",
+                        people:"36",
+                        stars:"☆☆☆☆☆",
+                        price:"¥348.00",
+                    },
+                    {
+                        id:5,
+                        src:"./image/class_recommend_5.jpg",
+                        h3:"全网最热Python3入门+进阶 更快上手实际开发",
+                        level1:"实战",
+                        level2:"初级",
+                        people:"5486",
+                        stars:"☆☆☆☆☆",
+                        price:"¥366.00",
+                    }
+                ]
+            }
+        })
+
+        new Vue
+        ({
+            //  el: '#app',
+            el: '#class_new',
+            data:
+            {
+                cards:
+                [
+                    {
+                        id:1,
+                        src:"./image/class_new_01.jpg",
+                        h3:"纯正商业级应用-微信小程序开发实战",
+                        level1:"实战",
+                        level2:"中级",
+                        people:"556",
+                        stars:"☆☆☆☆☆",
+                        price:"¥366.00",
+                    },
+                    {
+                        id:2,
+                        src:"./image/class_new_02.jpg",
+                        h3:"Spring Boot 2.0深度实践之核心技术篇",
+                        level1:"实战",
+                        level2:"高级",
+                        people:"339",
+                        stars:"☆☆☆☆☆",
+                        price:"¥366.00",
+                    },
+                    {
+                        id:3,
+                        src:"./image/class_new_03.jpg",
+                        h3:"低多边形（low poly）设计风格",
+                        level1:"",
+                        level2:"初级",
+                        people:"971",
+                        stars:"",
+                        price:"免费",
+                    },
+                    {
+                        id:4,
+                        src:"./image/class_new_04.jpg",
+                        h3:"RabbitMQ消息中间件技术精讲",
+                        level1:"实战",
+                        level2:"中级",
+                        people:"175",
+                        stars:"☆☆☆☆☆",
+                        price:"¥348.00",
+                    },
+                    {
+                        id:5,
+                        src:"./image/class_new_05.jpg",
+                        h3:"学习Hyperledger Fabric 实战联盟链",
+                        level1:"实战",
+                        level2:"高级",
+                        people:"38",
+                        stars:"☆☆☆☆☆",
+                        price:"¥266.00",
+                    },
+                    {
+                        id:6,
+                        src:"./image/class_new_06.jpg",
+                        h3:"玩转数据结构 从入门到进阶",
+                        level1:"实战",
+                        level2:"中级",
+                        people:"1759",
+                        stars:"☆☆☆☆☆",
+                        price:"¥299.00",
+                    },
+                    {
+                        id:7,
+                        src:"./image/class_new_07.jpg",
+                        h3:"Android性能优化之布局优化",
+                        level1:"",
+                        level2:"中级",
+                        people:"987",
+                        stars:"",
+                        price:"免费",
+                    },
+                    {
+                        id:8,
+                        src:"./image/class_new_08.jpg",
+                        h3:"React16.4 开发简书项目 从零基础入门到实战",
+                        level1:"实战",
+                        level2:"中级",
+                        people:"603",
+                        stars:"☆☆☆☆☆",
+                        price:"¥299.00",
+                    },
+                    {
+                        id:9,
+                        src:"./image/class_new_09.jpg",
+                        h3:"短信验证",
+                        level1:"",
+                        level2:"中级",
+                        people:"610",
+                        stars:"",
+                        price:"免费",
+                    },
+                    {
+                        id:10,
+                        src:"./image/class_new_10.jpg",
+                        h3:"深度学习之神经网络（CNN/RNN/GAN）算法原理+实战",
+                        level1:"实战",
+                        level2:"中级",
+                        people:"128",
+                        stars:"☆☆☆☆☆",
+                        price:"¥366.00",
+                    }
+                ]
+            }
+        })
+
+        new Vue
+        ({
+            //  el: '#app',
+            el: '#class_basic',
+            data:
+            {
+                cards:
+                [
+                    {
+                        id:1,
+                        src:"./image/class_basic_01.jpg",
+                        h3:"前端小白入门系列课程",
+                        level1:"职业路径",
+                        level2:"5步/33课",
+                        people:"5667",
+                        stars:"",
+                        price:"¥568.00",
+                    },
+                    {
+                        id:2,
+                        src:"./image/class_basic_02.jpg",
+                        h3:"Java零基础入门",
+                        level1:"职业路径",
+                        level2:"3步/27课",
+                        people:"5727",
+                        stars:"",
+                        price:"¥358.00",
+                    },
+                    {
+                        id:3,
+                        src:"./image/class_basic_03.jpg",
+                        h3:"零基础入门Android语法与界面",
+                        level1:"职业路径",
+                        level2:"5步/43课",
+                        people:"2059",
+                        stars:"",
+                        price:"¥499.00",
+                    },
+                    {
+                        id:4,
+                        src:"./image/class_basic_04.jpg",
+                        h3:"Flutter开发第一步-Dart编程语言入门",
+                        level1:"",
+                        level2:"入门",
+                        people:"2412",
+                        stars:"",
+                        price:"免费",
+                    },
+                    {
+                        id:5,
+                        src:"./image/class_basic_05.jpg",
+                        h3:"微信小程序入门与实战 常用组件API开发技巧项目实战",
+                        level1:"实战",
+                        level2:"初级",
+                        people:"14157",
+                        stars:"☆☆☆☆☆",
+                        price:"¥149.00",
+                    },
+                    {
+                        id:6,
+                        src:"./image/class_basic_06.jpg",
+                        h3:"Java Web强化：SSM框架整合",
+                        level1:"职业路径",
+                        level2:"3步/19课",
+                        people:"818",
+                        stars:"",
+                        price:"¥628.00",
+                    },
+                    {
+                        id:7,
+                        src:"./image/class_basic_07.jpg",
+                        h3:"python运维-Socket网络编程",
+                        level1:"",
+                        level2:"入门",
+                        people:"3404",
+                        stars:"",
+                        price:"免费",
+                    },
+                    {
+                        id:8,
+                        src:"./image/class_basic_08.jpg",
+                        h3:"C++零基础入门  热门编程语言  二级考试必备",
+                        level1:"职业路径",
+                        level2:"3步/34课",
+                        people:"424",
+                        stars:"",
+                        price:"¥428.00",
+                    },
+                    {
+                        id:9,
+                        src:"./image/class_basic_09.jpg",
+                        h3:"React16.4 快速上手",
+                        level1:"",
+                        level2:"初级",
+                        people:"6244",
+                        stars:"",
+                        price:"免费",
+                    },
+                    {
+                        id:10,
+                        src:"./image/class_basic_10.jpg",
+                        h3:"毕设项目 SSM到Spring Boot 从零开发校园商铺平台",
+                        level1:"实战",
+                        level2:"初级",
+                        people:"1327",
+                        stars:"☆☆☆☆☆",
+                        price:"¥299.00",
+                    }
+                ]
+            }
+        })
+        
+        new Vue
+        ({
+            //  el: '#app',
+            el: '#mooc_teachers_card_p1',
+            data:
+            {
+                cards:
+                [
+                    {
+                        id:1,
+                        src:"./image/mooc_teacher_icon_01.jpg",
+                        name:"DellLee",
+                        job:"Web前端攻城师",
+                        abstract:"BAT资深前端工程师，负责数据平台技术研发。曾任去哪儿网高级前端工程师，主导去哪儿网内部前端监控系统设计，负责去哪儿网门票用户端的前端设计开发。曾任国内知名培训机构高级前端讲师，负责React，Angular，Vue，Hybrid，RN的课程讲授，具备丰富前端授课经验。对优雅编程及工程化有深度思考及见解，教会你写代码，同时帮助你把代码写的更漂亮！",
+                    },
+                    {
+                        id:2,
+                        src:"./image/mooc_teacher_icon_02.jpg",
+                        name:"风落几番",
+                        job:"全栈工程师",
+                        abstract:"蚂蚁金服测试专家，带领团队从零建立多个大型项目安全测试，针对Web安全测试搭建了基于开源工具的安全测试架构，独立开发基于WebDriver的自动化测试平台，著有《LoadRunner性能测试巧匠训练营》。",
+                    },
+                    {
+                        id:3,
+                        src:"./image/mooc_teacher_icon_03.jpg",
+                        name:"大漠风",
+                        job:"全栈工程师",
+                        abstract:"15年的开发经验，目前在一家创业公司担任技术总监，熟悉java、python、前端开发等，有丰富的架构设计、开发经验。喜欢clojure，爱好足球，最近在研究用python做基于机器学习的量化投资",
+                    },
+                    {
+                        id:4,
+                        src:"./image/mooc_teacher_icon_04.jpg",
+                        name:"河畔一角",
+                        job:"Web前端工程师",
+                        abstract:"六年前端开发经验，曾任职于IBM、乐视等从事前端开发工作。热爱编程，乐于分享!",
+                    },
+                    {
+                        id:5,
+                        src:"./image/mooc_teacher_icon_05.jpg",
+                        name:"bennyhuo",
+                        job:"移动开发工程师",
+                        abstract:"北京邮电大学硕士毕业，就职于腾讯，先后负责腾讯地图Android SDK的开发和维护，期间支持了QQ、微信、滴滴、饿了么、大众点评等客户，后从事腾讯车联相关的应用开发，主攻 Android 开发。 博客：http://www.println.net/ Github：https://github.com/enbandari",
+                    },
+                ]
+            }
+        })
+
+        new Vue
+        ({
+            //  el: '#app',
+            el: '#mooc_teachers_card_p2',
+            data:
+            {
+                cards:
+                [
+                    {
+                        id:1,
+                        src:"./image/mooc_teacher_icon_06.jpg",
+                        name:"Geely",
+                        job:"JAVA开发工程师",
+                        abstract:"Geely，丰富的互联网项目经验，公司内部技术讲师，热爱技术，乐于分享；教学格言：把复杂的技术简单化，简单的技术极致化",
+                    },
+                    {
+                        id:2,
+                        src:"./image/mooc_teacher_icon_07.jpg",
+                        name:"Andrew_",
+                        job:"JAVA开发工程师",
+                        abstract:"某研发中心项目总监，主要从事项目的研发工作。8年的软件开发经验，精通java以及衍生相关技术领域，近1年致力于DevOps相关技术的研究，搭建mesos marathon等平台，结合CI/CD技术，推广及落地DevOps思想及技术，并结合大数据及人工智能领域技术对DevOps进行相关技术智能化改造。",
+                    },
+                    {
+                        id:3,
+                        src:"./image/mooc_teacher_icon_08.jpg",
+                        name:"Mr_Ricky",
+                        job:"算法工程师",
+                        abstract:"珠海金山办公软件有限公司（WPS）人工智能领域专家，高级算法工程师，拥有多年年软件开发经验。曾带领团队开发过基于人脸识别技术的智能支付系统、推荐系统、智能问答系统等。擅长数据挖掘、机器学习、移动开发等专业领域，并拥有丰富的实战经验。",
+                    },
+                    {
+                        id:4,
+                        src:"./image/mooc_teacher_icon_09.jpg",
+                        name:"浩然老师",
+                        job:"",
+                        abstract:"艺术与商业结合的矛盾体设计师，现为自由设计师，曾服务捷越联合、东站西子国际、信安亚双十一视觉等互联网以及品牌设计公司。",
+                    },
+                    {
+                        id:5,
+                        src:"./image/mooc_teacher_icon_10.jpg",
+                        name:"雷宇_",
+                        job:"全栈工程师",
+                        abstract:"从事软件研发工作10年，曾就职于国内两家上市公司担任Java研发负责人及Android App研发负责人、某外企Android framework解决方案高级工程师、国内某知名电商平台担任Android主程，现任职于一家新能源公司担任Android研发经理。精通架构设计及主流技术框架；熟悉OC、Swift、JavaScript、H5、小程序及Linux等。热爱新技术，敢于尝试新技术的研究与实际应用",
+                    },
+                ]
+            }
+        })
+        new Vue
+        ({
+            //  el: '#app',
+            el: '#mooc_teachers_card_p3',
+            data:
+            {
+                cards:
+                [
+                    {
+                        id:1,
+                        src:"./image/mooc_teacher_icon_11.jpg",
+                        name:"7七月",
+                        job:"全栈工程师",
+                        abstract:"多年研发经验，毕业后一直任职于某大型互联网公司，担任研发经理。后开始自己的创业。精通Python、NodeJS、Javascript、PHP等，一直致力于Web技术的研究",
+                    },
+                    {
+                        id:2,
+                        src:"./image/mooc_teacher_icon_12.jpg",
+                        name:"ustbhuangyi",
+                        job:"",
+                        abstract:"北京科技大学毕业，计算机专业硕士。曾任职百度，现就职滴滴，滴滴 WebApp 前端架构组负责人，专家工程师；擅长前端自动化、工程化，前端架构方向。开源项目 better-scroll、cube-ui 作者，《Vue.js 权威指南》作者，乐于技术分享，追求极致。",
+                    },
+                    {
+                        id:3,
+                        src:"./image/mooc_teacher_icon_13.jpg",
+                        name:"liuyubobobo",
+                        job:"全栈工程师",
+                        abstract:"创业者，全栈工程师，持续学习者。对技术开发，产品设计、前后端，ios，html5，智能算法等领域均有接触；拥有多款独立App作品；对一切可编程的东西有浓厚兴趣，对游戏编程格外感兴趣。相信编程改变一切。",
+                    },
+                    {
+                        id:4,
+                        src:"./image/mooc_teacher_icon_14.jpg",
+                        name:"大漠",
+                        job:"Web前端工程师",
+                        abstract:"W3CPlus创始人，目前就职于手淘。对CSS3和Sass等前端脚本语言有深入的认识和丰富的实践经验。CSS3、Sass和Drupal中国布道者，2014年出版《图解CSS3：核心技术与案例实战》。",
+                    },
+                    {
+                        id:5,
+                        src:"./image/mooc_teacher_icon_15.jpg",
+                        name:"Scott",
+                        job:"",
+                        abstract:"Web前端攻城师88年狮子男，前端攻城4年，以Coding为生，以Coding为乐，爱足球，喜做饭。就职于阿里妈妈用户体验中心-MUX，专注于淘宝单品外投，研究创（Guang）意（Gao）效果，加载方案优化，略有心得。",
+                    },
+                ]
+            }
+        })
+    </script>
+</body>
+</html>

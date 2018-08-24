@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>慕课网-程序员的梦工厂</title>
+    <script src="https://cdn.bootcss.com/vue/2.2.2/vue.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+
+    <div id="app">
+        <card-post v-bind:card="card"></card-post>
+    </div>
+
+    <script>
+        Vue.component('card-post',
+        {
+            props: ['card'],
+            template: `
+                    <div id="class_02" class="class_card_div">
+                        <a href="#">
+                            <img :src='card.src'>
+                            <h3>{{card.h3}}</h3>
+                            <p>
+                                <span>{{card.level1}}</span>
+                                <span>{{card.level2}}</span>
+                                <span>{{card.people}}</span>
+                                <span class="class_card_content_stars">{{card.stars}}</span>
+                            </p>
+                            <p class="class_card_price">{{card.price}}</p>
+                        </a>
+                    </div> 
+                `
+        })
+
+        $.get("http://yummycarrot.asuscomm.com:6009/mymooc/vue-test.json",
+            function(result, state)
+            {
+                //这里显示从服务器返回的数据
+                new Vue(
+                {
+                    el: '#app',
+                    data:
+                    {
+                        card: result
+                    }
+                })
+                //这里显示返回的状态
+                alert(state);
+            })
+    </script>
+
+    </body>
+
+</html>

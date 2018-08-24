@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "src": "./image/mooc_teacher_icon_11.jpg",
+        "name": "7七月",
+        "job": "全栈工程师",
+        "abstract": "多年研发经验，毕业后一直任职于某大型互联网公司，担任研发经理。后开始自己的创业。精通Python、NodeJS、Javascript、PHP等，一直致力于Web技术的研究"
+    },
+    {
+        "id": 2,
+        "src": "./image/mooc_teacher_icon_12.jpg",
+        "name": "ustbhuangyi",
+        "job": "",
+        "abstract": "北京科技大学毕业，计算机专业硕士。曾任职百度，现就职滴滴，滴滴 WebApp 前端架构组负责人，专家工程师；擅长前端自动化、工程化，前端架构方向。开源项目 better-scroll、cube-ui 作者，《Vue.js 权威指南》作者，乐于技术分享，追求极致。"
+    },
+    {
+        "id": 3,
+        "src": "./image/mooc_teacher_icon_13.jpg",
+        "name": "liuyubobobo",
+        "job": "全栈工程师",
+        "abstract": "创业者，全栈工程师，持续学习者。对技术开发，产品设计、前后端，ios，html5，智能算法等领域均有接触；拥有多款独立App作品；对一切可编程的东西有浓厚兴趣，对游戏编程格外感兴趣。相信编程改变一切。"
+    },
+    {
+        "id": 4,
+        "src": "./image/mooc_teacher_icon_14.jpg",
+        "name": "大漠",
+        "job": "Web前端工程师",
+        "abstract": "W3CPlus创始人，目前就职于手淘。对CSS3和Sass等前端脚本语言有深入的认识和丰富的实践经验。CSS3、Sass和Drupal中国布道者，2014年出版《图解CSS3：核心技术与案例实战》。"
+    },
+    {
+        "id": 5,
+        "src": "./image/mooc_teacher_icon_15.jpg",
+        "name": "Scott",
+        "job": "",
+        "abstract": "Web前端攻城师88年狮子男，前端攻城4年，以Coding为生，以Coding为乐，爱足球，喜做饭。就职于阿里妈妈用户体验中心-MUX，专注于淘宝单品外投，研究创（Guang）意（Gao）效果，加载方案优化，略有心得。"
+    }
+]

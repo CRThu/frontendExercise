@@ -1,0 +1,1007 @@
+.header_ul
+{
+    list-style-type: none;          /*移除列表前小标志*/
+    margin: 0;                      /*将边距和填充设置为0*/
+    padding: 0;                     /*将边距和填充设置为0*/
+    overflow: hidden;               /*防止li 列表溢出*/
+    background-color: #FFFFFF;    /*背景白色*/
+    font: 16px/1.5 "PingFang SC","微软雅黑","Microsoft YaHei";
+}
+
+.header_ul li
+{
+    /* float: left;*/               /*使用浮动块元素的幻灯片彼此相邻 */
+    display: inline-block;
+    line-height: 72px;
+}
+
+.header_ul li a
+{
+    display: block;                 /*块元素*/
+    color: #4D555D;               /*文字颜色*/
+    text-align: center;             /*文字居中*/
+    padding: 0px 15px;
+    text-decoration: none;
+}
+/* 鼠标移动到选项上修改背景颜色 */
+.header_ul li a:hover
+{
+    background-color: #eeeeee;
+}
+/*添加active类来表示选项被选中*/
+/* .active
+{
+    background-color: lightblue;
+    color: black;
+} */
+#header
+{
+    position: relative;             /*导航容器位置标定*/
+    left: 0px;
+    top: 0px;
+    width: 1200px;                  /*导航容器大小标定*/
+    height: 72px;
+    overflow: hidden;               /*隐藏移除部分*/
+}
+.header_logo
+{
+    position: absolute;             /*网页图标位置标定*/
+    left: 0px;
+    top: 0px;
+    display: inline-block;
+    width: 180px;
+    height: 72px;
+}
+.header_href
+{
+    position: absolute;             /*导航栏位置标定*/
+    left: 140px;
+    top: 0px;
+    display: inline-block;
+    width: 480px;
+    height: 72px;
+}
+#header_search
+{
+    position: absolute;             /*搜索容器位置标定*/
+    left: 630px;
+    top: 0px;
+    margin: 0;                      /*将边距和填充设置为0*/
+    padding: 0;                     /*将边距和填充设置为0*/
+    display: inline-block;
+    width: 180px;
+    height: 72px;
+}
+.header_search_href
+{
+    position: absolute;             /*搜索推荐链接位置标定*/
+    left: 0px;
+    top: 24px;
+    /* display: inline-block; */
+    width: 50px;
+    height: 24px;
+    z-index: 2;
+    background-color: #f3f5f7;
+    color: #4D555D;
+    text-decoration: none;
+
+    font: 12px/1.5 "PingFang SC","微软雅黑","Microsoft YaHei";
+    border-radius: 12px;
+    line-height: 24px;
+    padding: 0 8px;
+}
+.header_search_href_1
+{
+    left: 10px;                      /*override搜索推荐链接位置*/
+    top: 24px;
+}
+.header_search_href_2
+{
+    left: 85px;                     /*override搜索推荐链接位置*/
+    top: 24px;
+}
+.header_search_input
+{
+    position: absolute;             /*搜索输入框位置标定*/
+    left: 0px;
+    top: 10px;
+    width: 175px;
+    height: 50px;
+    z-index: 1;
+    border:0px solid white;       /*边框宽度以及颜色*/
+}
+.header_search_button
+{
+    position: absolute;             /*搜索按钮位置标定*/
+    left: 155px;
+    top: 24px;
+    width: 20px;
+    height: 24px;
+    z-index: 2;
+}
+.header_search_hr
+{
+    position: absolute;             /*搜索下横线位置标定*/
+    left: 0px;
+    top: 55px;
+    width: 180px;
+    z-index: 2;
+}
+.header_user
+{
+    position: absolute;             /*用户导航容器标定*/
+    left: 850px;
+    top: 0px;
+    display: inline-block;
+    width: 320px;
+    height: 72px; 
+}
+.header_user li
+{
+
+}
+#cart_div
+{
+    position:absolute;              /*悬浮窗位置标定*/
+    left:730px;
+    top:90px;
+    z-index: 100;
+    /* display: inline-block; */
+    display: none;
+    width: 300px;
+    height: 420px;
+    border: 1px solid rgb(3, 238, 255,0.65);
+    background: rgba(168, 211, 255,0.35);
+}
+#menu
+{
+    position: relative;             /*主菜单容器位置标定*/
+    left: 25px;
+    top: 25px;
+    width: 1150px;
+    height: 450px;
+    margin: 0 auto;
+    /* overflow: hidden; */
+}
+.menu_list
+{
+    position: absolute;             /*菜单位置标定*/
+    left: 0px;
+    top: 0px;
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    /* text-align: center; */
+    padding: 0px 25px;
+    /* padding: 0px 0px; */
+    width: 200px;
+    background-color: #2b333b;
+    color: #aaadb1;
+}
+.menu_list li
+{
+    line-height: 60px;
+}
+#menu_recommend
+{
+    position: absolute;             /*推荐课程位置标定*/
+    left: 250px;
+    top: 0px;
+    display: inline-block;
+    width: 800px;
+    height: 300px;
+}
+#img_dot
+{
+    position: absolute;             /*图片选择点位置标定*/
+    left: 600px;
+    top: 270px;
+    display: inline-block;
+    width: 200px;
+    height: 20px;
+    color: white;
+    cursor: pointer;
+}
+#menu_div
+{
+    position: absolute;              /*菜单详细课程悬浮窗位置标定*/
+    left:250px;
+    top:0px;
+    z-index: 100;
+    /* display: inline-block; */
+    display: none;
+    width: 700px;
+    height: 420px;
+    /* border: 1px solid rgb(3, 238, 255,0.65); */
+    background: #ffd8d8;
+}
+.menu_div_classify
+{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 700px;
+    height: 220px;
+}
+.menu_div_classify span
+{
+    font: 14px/1.5 "PingFang SC","微软雅黑","Microsoft YaHei";
+    font-size: 14px;
+    color: #F20D0D;
+    line-height: 24px;
+    font-weight: 700;
+}
+.menu_div_classify a
+{
+    font: 14px/1.5 "PingFang SC","微软雅黑","Microsoft YaHei";
+    font-size: 14px;
+    color: #4D555D;
+    line-height: 22px;
+    margin-right: 24px;
+    display: inline-block;
+    text-decoration: none;
+}
+#menu_div_t1
+{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+#menu_div_d1
+{
+    position: absolute;
+    left: 20px;
+    top: 50px;
+}
+#menu_div_t2
+{
+    position: absolute;
+    left: 20px;
+    top: 120px;
+}
+#menu_div_d2
+{
+    position: absolute;
+    left: 20px;
+    top: 150px;
+}
+.menu_div_recommend
+{
+    position: absolute;
+    left: 0px;
+    top: 220px;
+    width: 700px;
+    height: 200px;
+    background-color: #F8FAFC;
+}
+.menu_div_recommend_card
+{
+    position: absolute;
+    width: 320px;
+    height: 60px;
+    /* background-color: red; */
+}
+.menu_div_recommend_card_1
+{
+    left: 20px;
+    top: 25px;
+}
+.menu_div_recommend_card_2
+{
+    left: 360px;
+    top: 25px;
+}
+.menu_div_recommend_card_3
+{
+    left: 20px;
+    top: 110px;
+}
+.menu_div_recommend_card_4
+{
+    left: 360px;
+    top: 110px;
+}
+.menu_div_recommend_card img
+{
+    position: absolute;
+    left: 30px;
+    top: 10px;
+    width: 64px;
+    height: 42px;
+}
+.menu_div_recommend_card h3
+{
+    position: absolute;
+    margin: 0px 0px;
+    left: 100px;
+    top: 10px;
+    width: 220px;
+    height: 18px;
+    color: black;
+    font: 12px/1.5 "PingFang SC","微软雅黑","Microsoft YaHei";
+
+    overflow: hidden;           /*省略号对超出部分省略*/
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+.menu_div_recommend_info
+{
+    position: absolute;
+    margin: 0px 0px;
+    left: 100px;
+    top: 30px;
+    color: #4D555D;
+    font: 12px/1.5 "PingFang SC","微软雅黑","Microsoft YaHei";
+}
+#classification
+{
+    position: relative;
+    left: 250px;
+    top: 300px;
+
+    width: 800px;
+    height: 120px;
+
+    overflow: hidden;
+}
+.cl_div
+{
+    position: relative;
+    width: 155px;
+    height: 120px;
+    display: inline-block;
+}
+.cl_div img
+{
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    left: 65px;
+    top: 22px;
+    display: inline-block;
+}
+.cl_div a p
+{
+    position: absolute;
+    width: 180px;
+    height: 21px;
+    display: inline-block;
+    text-align: center;
+    /* margin: 5px 5px; */
+}
+.cl_div_p1
+{
+    left: 0px;
+    top: 50px;
+    font: 14px/1.5 "PingFang SC","微软雅黑","Microsoft YaHei";
+    color: #07111B;
+}
+.cl_div_p2
+{
+    left: 0px;
+    top: 70px;
+    font: 12px/1.5 "PingFang SC","微软雅黑","Microsoft YaHei";
+    color: #93999F;
+}
+#class_recommend
+{
+    position: relative;
+    width: 1170px;
+    height: 264px;
+    left: 25px;
+    top: 25px;
+    overflow: hidden;       /*隐藏多余的 card*/
+    margin:0 auto;          /*div屏幕居中*/
+}
+#class_new
+{
+    position: relative;
+    width: 1170px;
+    height: 550px;
+    left: 25px;
+    top: 25px;
+    overflow: hidden;       /*隐藏多余的 card*/
+    margin:0 auto;          /*div屏幕居中*/
+}
+#class_basic
+{
+    position: relative;
+    width: 1170px;
+    height: 550px;
+    left: 25px;
+    top: 25px;
+    overflow: hidden;       /*隐藏多余的 card*/
+    margin:0 auto;          /*div屏幕居中*/
+}
+.class_cards_h3
+{
+    position: relative;
+    left: 0px;
+    top: 0px;
+    text-align: center;
+}
+.class_card_div
+{
+    display: inline-block;
+    position: relative;
+    width: 216px;
+    height: 252px;
+    margin: 5px 5px;        /*卡片之间加入间隔*/
+}
+.class_card_div:hover > a > h3
+{
+    color: red;
+}
+.class_card_div a img
+{
+    position: absolute;
+    width: 216px;
+    height: 120px;
+    top: 0px;
+    left: 0px;
+    border-radius: 10px;
+}
+.class_card_div a h3
+{
+    position: absolute;
+    width: 200px;
+    height: 46px;
+    left: 0px;
+    top: 120px;
+    font: 16px/1.5 "PingFang SC","微软雅黑","Microsoft YaHei";
+    line-height: 24px;
+    color: #07111B;
+    
+    overflow:hidden;            /*多行省略号*/
+    text-overflow:ellipsis; 
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    /*-webkit-line-clamp用来限制在一个块元素显示的文本的行数。 为了实现该效果，它需要组合其他的WebKit属性。常见结合属性：
+    display: -webkit-box; 必须结合的属性 ，将对象作为弹性伸缩盒子模型显示 。
+    -webkit-box-orient 必须结合的属性 ，设置或检索伸缩盒对象的子元素的排列方式 。*/
+}
+.class_card_div a p
+{
+    position: absolute;
+    width: 200px;
+    height: 20px;
+    left: 0px;
+    top: 180px;
+    font: 12px/1.5 "PingFang SC","微软雅黑","Microsoft YaHei";
+    color: #93999F;
+}
+.class_card_content_stars
+{
+    
+}
+.class_card_price
+{
+    top: 205px!important;
+    color: #07111B!important;
+}
+.class_article
+{
+    position: relative;
+    width:1216px;
+    height: 1600px;
+    /* -webkit-column-width: 372px;
+    -moz-column-width: 372px;
+    column-width: 372px; */
+    /* -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3; */
+
+    background-color: #f8fafc;
+}
+.class_article_card
+{
+    /* float:left; */
+    width:372px;
+    /* background-color: #ffd8d8; */
+    /* margin: 15px 7px 0px 7px; */
+    border-radius:5px;                 /*圆边框*/
+    box-shadow:2px 2px 5px #f2f5f6;      /*阴影*/
+    background-color: white;
+    position: absolute;
+}
+.class_article_type
+{
+    position: absolute;
+    left: 40px;
+    top: 30px;
+    font:14px/1.5 "PingFang SC","微软雅黑","Microsoft YaHei";
+}
+.blue
+{
+    color: rgba(0,140,200,.6)!important;
+}
+.green
+{
+    color: rgba(0,180,60,.6)!important;
+}
+.question_title
+{
+    font-size: 14px!important;
+}
+.best-label
+{
+    margin: 0px;
+    padding: 0px;
+    font-size: 12px;
+    color: #07111B;
+}
+.best-answer
+{
+    margin: 0px;
+    padding: 0px;
+    font-size: 12px;
+    color: #4D555D;
+}
+.class_article_header
+{
+    position: absolute;
+    left: 40px;
+    top: 60px;
+    font: 16px/1.5 "PingFang SC","微软雅黑","Microsoft YaHei";
+    color: #07111B;
+}
+.class_article_abstract
+{
+    position: absolute;
+    left: 40px;
+    top: 110px;
+    width: 300px;
+    font: 12px/1.5 "PingFang SC","微软雅黑","Microsoft YaHei";
+    color: #4d555d;
+}
+.class_topic_abstract
+{
+    position: absolute;
+    left: 40px;
+    top: 150px;
+    width: 300px;
+    font: 12px/1.5 "PingFang SC","微软雅黑","Microsoft YaHei";
+    color: #4d555d;
+}
+.class_article_info
+{
+    position: absolute;
+    left: 40px;
+    bottom: 40px;
+    font: 12px/1.5 "PingFang SC","微软雅黑","Microsoft YaHei";
+    color: #93999F
+}
+.class_article_all
+{
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+    font: 12px/1.5 "PingFang SC","微软雅黑","Microsoft YaHei";
+}
+.class_topic_all
+{
+    position: absolute;
+    right: 40px;
+    top: 270px;
+    font: 12px/1.5 "PingFang SC","微软雅黑","Microsoft YaHei";
+}
+.class_topic_line
+{
+    position: absolute;
+    left: 40px;
+    top: 310px;
+    margin: 24px 0px 24px 0px;
+    width: 308px;
+    height: 1px;
+    background-color: #D9DDE1;
+}
+.class_topic_line span
+{
+    position: relative;
+    top: -10px;
+    font-size: 12px;
+    padding-right: 12px;
+    color: #93999F;
+    background-color: #fff;
+    line-height: 16px;
+}
+.class_topic_past_header
+{
+    position: absolute;
+    left: 40px;
+    top: 360px;
+    width: 308px;
+    height: 248px;
+    /* background-color: #99a1a6; */
+}
+.class_topic_past_header_div
+{
+    display: inline-block;
+    position: relative;
+    width: 308px;
+    height: 72px;
+    /* background-color: coral; */
+    margin: 0px 0px 8px 0px;
+}
+.class_topic_past_header_div a
+{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 224px;
+    height: 72px;
+    
+    font:14px/1.5 "PingFang SC","微软雅黑","Microsoft YaHei",Helvetica,"Helvetica Neue",Tahoma,Arial,sans-serif;
+    color: #4D555D;
+    text-decoration: none;
+}
+.class_topic_past_header_div img
+{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 72px;
+    height: 72px;
+
+    border-radius: 5px;
+}
+.mooc_teachers
+{
+    position: relative;
+    left: 0px;
+    height: 0px;
+    /* width: 1216px; */
+    height: 408px;
+    /* background-color: #4D555D; */
+    background: url("./image/imooc_teacher_bk.jpg") center center no-repeat;
+}
+.mooc_teachers_h3
+{
+    position: absolute;
+    width: 1152px;
+    height: 36px;
+    text-align: center;
+    top: 20px;
+
+    font: 20px/1.5 "PingFang SC","微软雅黑","Microsoft YaHei";
+    font-weight: 600;
+    color: white;
+    text-align: center;
+}
+.mooc_teachers_cards_div
+{
+    position: absolute;
+    left: 20px;
+    top: 150px;
+    width: 1152px;
+    height: 248px;
+    /* background-color: #ffd8d856; */
+}
+.mooc_teachers_card
+{
+    display: inline-block;
+    position: relative;
+    top:-30px;
+    width: 216px;
+    height: 248px;
+    margin:0px 5px 0px 5px;
+    background-color: #ffffffb0;
+    border-radius: 10px;
+    /* overflow: hidden; */
+}
+.mooc_teachers_card:hover >a >img
+{
+    width: 60px;
+    height: 60px;
+    left: 80px;
+}
+.mooc_teachers_card:hover >a >.mooc_teacher_name
+{
+    display: none;
+}
+.mooc_teachers_card:hover >a >.mooc_teacher_job
+{
+    display: none;
+}
+.mooc_teachers_card:hover >a >.mooc_teacher_abstract
+{
+    top:60px;
+    -webkit-line-clamp: 8;
+}
+.mooc_teachers_card a
+{
+    text-decoration: none;
+}
+.mooc_teachers_card a img
+{
+    position: absolute;
+    left: 65px;
+    top: -20px;
+    width: 96px;
+    height: 96px;
+    border-radius: 50px;
+}
+.mooc_teachers_card a span
+{
+    position: absolute;
+    width: 216px;
+
+    /* display: inline-block; */
+    text-align: center;             /*文字居中*/
+    /* color: black; */
+
+    overflow:hidden;            /*多行省略号*/
+    text-overflow:ellipsis; 
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+
+    font: 14px/1.5 "PingFang SC","微软雅黑","Microsoft YaHei",Helvetica,"Helvetica Neue",Tahoma,Arial,sans-serif;
+}
+.mooc_teacher_name
+{
+    top: 90px;
+    font-size: 16px!important;
+    color: #07111B;
+}
+.mooc_teacher_job
+{
+    top: 115px;
+    font-size: 12px!important;
+    color: #4D555D;
+}
+.mooc_teacher_abstract
+{
+    top: 160px;
+    width: 166px!important;
+    padding: 0px 25px;              /*两边空开距离*/
+    font-size: 12px!important;
+    color: #4D555D;
+}
+#mooc_teachers_card_p1
+{
+    /* display: none; */
+    display: inline-block;
+}
+#mooc_teachers_card_p2
+{
+    display: none;
+    /* display: inline-block; */
+}
+#mooc_teachers_card_p3
+{
+    display: none;
+    /* display: inline-block; */
+}
+#card_dot
+{
+    position: absolute;             /*图片选择点位置标定*/
+    left: 600px;
+    top: 375px;
+    display: inline-block;
+    width: 100px;
+    height: 20px;
+    color: white;
+    cursor: pointer;
+}
+.stars_mod
+{
+    position: relative;
+    left: 0px;
+    top: 0px;
+    margin: 0 auto;
+    padding: 36px 48px;
+
+    /* background-color: pink; */
+    width: 1152px;
+    height: 374px;
+}
+.stars_mod h3
+{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width:1152px;
+    height: 38px;
+    text-align: center;
+    color: #4D555D;
+    font: 20px/1.5 "PingFang SC","微软雅黑","Microsoft YaHei";
+}
+.stars_leader_list
+{
+    position: absolute;
+    left: 0px;
+    top: 50px;
+    width: 544px;
+    height: 98px;
+    margin: 38px 304px 48px 304px;
+    /* background-color: #d5dee7; */
+}
+.stars_leader_div
+{
+    float: left;
+    position: relative;
+    width: 136px;
+    height: 98px;
+    margin: 0px;
+    padding: 0px;
+    /* background-color: antiquewhite; */
+    text-align: center;
+}
+.stars_leader_img
+{
+    width: 56px;
+    height: 56px;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 56px;
+}
+.stars_leader_p1
+{
+    width: 136px;
+    height: 16px;
+    margin: 8px 0px 0px 0px;
+    padding: 0px;
+
+    color: #07111B;
+    line-height: 16px;
+    font: 14px/1.5 "PingFang SC","微软雅黑","Microsoft YaHei";
+    text-align: center;
+}
+.stars_leader_p2
+{
+    width: 136px;
+    height: 18px;
+    margin: 0px;
+    padding: 0px;
+
+    color: #93999F;
+    font-weight: 400;
+    font: 12px/1.5 "PingFang SC","微软雅黑","Microsoft YaHei";
+    text-align: center;
+}
+.stars_friends_list
+{
+    position: absolute;
+    left: 0px;
+    top: 230px;
+    width: 858px;
+    height: 152px;
+    margin: 0px 147px;
+    /* background-color: #d5dee7; */
+}
+.stars_friends_div
+{
+    float: left;
+    height: 50px;
+    width: 50px;
+    margin: 0px 28px 24px 0px;
+}
+.stars_friends_div img
+{
+    height: 48px;
+    width: 48px;
+    border-radius: 48px;
+}
+.stars_friends_div_img_line2
+{
+    margin-left: 40px;
+}
+.footer
+{
+    position: relative;
+    width: 1193px;
+    height: 60px;
+    padding: 36px 0px 36px 0px;
+    background-color: #f8fafc;
+}
+.footer_link
+{
+    position: absolute;
+    left: 30px;
+    top: 40px;
+}
+.footer_link a
+{
+    text-decoration: none;
+    font: 14px/1.5 "PingFang SC","微软雅黑","Microsoft YaHei",Helvetica,"Helvetica Neue",Tahoma,Arial,sans-serif;
+    margin: 0 10px;
+    color: #99a1a6;
+}
+.footer_copyright
+{
+    position: absolute;
+    left: 30px;
+    top: 70px;
+    font: 12px/1.5 "PingFang SC","微软雅黑","Microsoft YaHei",Helvetica,"Helvetica Neue",Tahoma,Arial,sans-serif;
+    color: #99a1a6;
+}
+.footer_info
+{
+    position: absolute;
+    left: 1000px;
+    top: 30px;
+    font: 12px/1.5 "PingFang SC","微软雅黑","Microsoft YaHei",Helvetica,"Helvetica Neue",Tahoma,Arial,sans-serif;
+    color:#4D555D;
+}
+.footer_info_wx
+{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 64px;
+    height: 50px;
+}
+.footer_info_wx a
+{
+    display: inline-block;
+    background-image: url(./image/wechat_icon.png);
+    background-size: 32px 32px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 64px;
+    height: 32px;
+}
+.footer_info_weibo
+{
+    position: absolute;
+    left: 80px;
+    top: 0px;
+    width: 64px;
+    height: 20px;
+}
+.footer_info_weibo a
+{
+    display: inline-block;
+    background-image: url(./image/weibo_icon.png);
+    background-size: 32px 32px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 48px;
+    height: 32px;
+}
+.elevator
+{
+    position: fixed;
+    width: 26px;
+    height: 227px;
+
+    padding: 0 16px;
+    bottom: 150px;
+    margin-top: -140px;
+    right: 0;
+
+    z-index: 900;
+    /* background-color: pink; */
+
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 12px 0 rgba(7,17,27,.1);
+}
+.elevator a
+{
+    display: inline-block;
+    background-size: 23px 23px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 26px;
+    height: 24px;
+    padding: 14px 0px 14px 0px;
+}
+.elevator_img1
+{
+    background-image: url(./image/goto_1.png);
+}
+.elevator_img2
+{
+    background-image: url(./image/goto_2.png);
+}
+.elevator_img3
+{
+    background-image: url(./image/goto_3.png);
+}
+.elevator_img4
+{
+    background-image: url(./image/goto_4.png);
+}

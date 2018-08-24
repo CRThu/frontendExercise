@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "src": "./image/mooc_teacher_icon_06.jpg",
+        "name": "Geely",
+        "job": "JAVA开发工程师",
+        "abstract": "Geely，丰富的互联网项目经验，公司内部技术讲师，热爱技术，乐于分享；教学格言：把复杂的技术简单化，简单的技术极致化"
+    },
+    {
+        "id": 2,
+        "src": "./image/mooc_teacher_icon_07.jpg",
+        "name": "Andrew_",
+        "job": "JAVA开发工程师",
+        "abstract": "某研发中心项目总监，主要从事项目的研发工作。8年的软件开发经验，精通java以及衍生相关技术领域，近1年致力于DevOps相关技术的研究，搭建mesos marathon等平台，结合CI/CD技术，推广及落地DevOps思想及技术，并结合大数据及人工智能领域技术对DevOps进行相关技术智能化改造。"
+    },
+    {
+        "id": 3,
+        "src": "./image/mooc_teacher_icon_08.jpg",
+        "name": "Mr_Ricky",
+        "job": "算法工程师",
+        "abstract": "珠海金山办公软件有限公司（WPS）人工智能领域专家，高级算法工程师，拥有多年年软件开发经验。曾带领团队开发过基于人脸识别技术的智能支付系统、推荐系统、智能问答系统等。擅长数据挖掘、机器学习、移动开发等专业领域，并拥有丰富的实战经验。"
+    },
+    {
+        "id": 4,
+        "src": "./image/mooc_teacher_icon_09.jpg",
+        "name": "浩然老师",
+        "job": "",
+        "abstract": "艺术与商业结合的矛盾体设计师，现为自由设计师，曾服务捷越联合、东站西子国际、信安亚双十一视觉等互联网以及品牌设计公司。"
+    },
+    {
+        "id": 5,
+        "src": "./image/mooc_teacher_icon_10.jpg",
+        "name": "雷宇_",
+        "job": "全栈工程师",
+        "abstract": "从事软件研发工作10年，曾就职于国内两家上市公司担任Java研发负责人及Android App研发负责人、某外企Android framework解决方案高级工程师、国内某知名电商平台担任Android主程，现任职于一家新能源公司担任Android研发经理。精通架构设计及主流技术框架；熟悉OC、Swift、JavaScript、H5、小程序及Linux等。热爱新技术，敢于尝试新技术的研究与实际应用"
+    }
+]
